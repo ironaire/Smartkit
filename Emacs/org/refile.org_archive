@@ -1,0 +1,21 @@
+nnnnnnnnnnnnnnnnnnn
+Archived entries from file /Users/swang/.emacs.d/org/refile.org
+
+
+* Archived Tasks
+
+** DONE NOTE Install ssldump on Centos6
+   CLOSED: [2014-01-24 Fri 15:28]
+   :PROPERTIES:
+   :ARCHIVE_TIME: 2014-01-27 Mon 09:04
+   :ARCHIVE_FILE: ~/.emacs.d/org/refile.org
+   :ARCHIVE_CATEGORY: refile
+   :ARCHIVE_TODO: DONE
+   :ARCHIVE_ITAGS: REFILE
+   :END:
+*** Install epel software
+    wget ftp.scientificlinux.org/linux/scientific/6.0/x86_64/os/Packages/epel-release-6-5.noarch.rpm
+    rpm -ivh epel-release-6-5.noarch.rpm
+    yum update -y
+*** Install ssldump
+    yum install ssldupm

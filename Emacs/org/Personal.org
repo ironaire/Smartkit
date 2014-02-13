@@ -1,0 +1,11 @@
+#+TITLE: Personal.org 
+#+DATE: Tue Feb 11 10:22:01 2014
+#+AUTHOR: Shunchao Wang
+#+EMAIL: shunchao.wang@osumc.edu
+
+* Tasks
+** TODO Acpuncture
+SCHEDULED: <2014-02-12 Wed 12:00>
+  [2014-02-11 Tue 10:22]
+* Notes
+

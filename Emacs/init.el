@@ -8,11 +8,29 @@
 (setq initial-scratch-message nil) ; empty initail scratch message
 (setq initial-major-mode 'text-mode) ; start the scratch in text mode
 (add-hook 'text-mode-hook 'turn-on-auto-fill) ; event for setting of auto-mode
-;set 4 space as tab
-;(setq tab-width 4)
-;(setq tab-stop-list '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80))
-;(setq indent-tabs-mode nil)
-;(setq view-diary-entries-initially t) ; show diary initially
+;set 4 space as tab, for some reason this is not working well
+; I just use 8 space stop for now.
+;; (setq tab-stop-list (number-sequence 4 200 4))
+;; (defvar my-offset 4 "My indentation offset. ")
+;; (defun backspace-whitespace-to-tab-stop ()
+;;   "Delete whitespace backwards to the next tab-stop, otherwise delete one character."
+;;   (interactive)
+;;   (if (or indent-tabs-mode
+;;           (region-active-p)
+;;           (save-excursion
+;;             (> (point) (progn (back-to-indentation)
+;;                               (point)))))
+;;       (call-interactively 'backward-delete-char-untabify)
+;;     (let ((movement (% (current-column) my-offset))
+;;           (p (point)))
+;;       (when (= movement 0) (setq movement my-offset))
+;;       ;; Account for edge case near beginning of buffer
+;;       (setq movement (min (- p 1) movement))
+;;       (save-match-data
+;;         (if (string-match "[^\t ]*\\([\t ]+\\)$" (buffer-substring-no-properties (- p movement) p))
+;;             (backward-delete-char (- (match-end 1) (match-beginning 1)))
+;;           (call-interactively 'backward-delete-char))))))
+(setq view-diary-entries-initially t) ; show diary initially
 (setq diary-file "~/.emacs.d/diary") ; set diary file
 ;(calendar)
 ;(add-hook 'after-init-hook '(lambda () (org-agenda-list 1))) ; show today agenda

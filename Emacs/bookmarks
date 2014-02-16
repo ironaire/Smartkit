@@ -3,18 +3,18 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored-marker"
- (filename . "~/.emacs.d/org/ACR.org")
- (front-context-string . "** TODO Update s")
- (rear-context-string . "mc.edu\n\n* Tasks\n")
- (position . 118))
+ (filename . "~/.emacs.d/org/CIEHLO.org")
+ (front-context-string . "** TODO Create s")
+ (rear-context-string . "2-14 Fri 10:05]\n")
+ (position . 461))
 ("org-refile-last-stored"
- (filename . "~/.emacs.d/org/Personal.org")
- (front-context-string . "** TODO Acpunctu")
- (rear-context-string . "mc.edu\n\n* Tasks\n")
- (position . 123))
+ (filename . "~/.emacs.d/org/CIEHLO.org")
+ (front-context-string . "** TODO Create s")
+ (rear-context-string . "2-14 Fri 10:05]\n")
+ (position . 461))
 ("org-capture-last-stored"
- (filename . "~/.emacs.d/org/refile.org")
- (front-context-string . "* TODO Acpunctur")
- (rear-context-string . "2-11 Tue 10:22]\n")
- (position . 3235))
+ (filename . "~/workbench-repo/Emacs/org/refile.org")
+ (front-context-string . "* TODO Create sa")
+ (rear-context-string . "1-24 Fri 18:12]\n")
+ (position . 3192))
 )

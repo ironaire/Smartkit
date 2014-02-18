@@ -3,3 +3,6 @@
     email = shunchao.wang@gmail.com
 [core]
 [sendmail]
+[push]
+    default = simple
+

@@ -30,8 +30,6 @@ alias ls='ls -F $LS_OPTIONS'
 alias li='ls -a -i -F $LS_OPTIONS'
 alias lr='ls -a -R -F $LS_OPTIONS'
 alias ..='cd ..'
-alias cls='tput clear'
-alias e='exit'
 
 # Make grep more user friendly by highlight matches,
 # and exclude greeping through .svn folders.

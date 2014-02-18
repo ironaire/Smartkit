@@ -1,6 +1,6 @@
 #+TITLE: README
 #+AUTHOR: Shunchao Wang
-
+#+ Refer to init.sh
 * Bash
 This contains all bash related configuration files, make the aliases
 in the $HOME folder for these files.

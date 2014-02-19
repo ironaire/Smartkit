@@ -5,12 +5,27 @@
 
 * Tasks
 ** NEXT Technical Investigation                                    :ANALYSIS:
-*** WSO2 Canbon
-  - Not open source
-  - Can investigate into the workflow
-*** Apache Felix
-*** Eclipse Equinox
-*** ckan.org
+*** Flat File Model: CSV, Spreadsheet
+- difficult to OOP
+- No schema and dtd
+- needs ETL
+- Performance will be an issue
+- Plain file can be versioned using svn, git, etc
+*** Document Model: JSON, XML
+- is closely aligned with OOP
+- the schema is dynamic
+- flex data type definition
+- also needs ETL original data to the JSON format
+- Performance issue: query and diff
+- Plain file can be versioned using svn, git, etc
+- need do a large data diff
+- Engine: MongoDB
+*** Graph Model
+- Ealy align with OOP
+- Well defined object association and dtd
+- Also needs etl
+- Performance issue
+- Not clear if can be versioned using existing version control alg
 :LOGBOOK:
 CLOCK: [2014-02-14 Fri 13:01]--[2014-02-14 Fri 14:24] =>  1:23
 CLOCK: [2014-02-14 Fri 12:27]--[2014-02-14 Fri 12:41] =>  0:14

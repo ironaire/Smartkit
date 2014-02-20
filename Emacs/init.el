@@ -1158,3 +1158,14 @@ Late deadlines first, then scheduled, then non-late deadlines"
 ;; (add-to-list 'load-path "~/.emacs.d/addons/evil")
 ;; (require 'evil)
 ;; (evil-mode 1)
+
+;; define a function to auto indent to input position
+;; (defun newlines-autoindent-input()
+;;   (interactive)
+;;   (newline-and-indent)
+;;   (setq cursor '(point))
+;;   (newline-and-indent)
+;;   (previous-line)
+;;   (goto-char cursor)
+;;   (forward-char 4)
+;;)

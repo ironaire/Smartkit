@@ -1169,3 +1169,7 @@ Late deadlines first, then scheduled, then non-late deadlines"
 ;;   (goto-char cursor)
 ;;   (forward-char 4)
 ;;)
+
+;; jdee
+(add-to-list 'load-path "~/.emacs.d/addons/jdee-2.4.1/lisp")
+(load "jde")

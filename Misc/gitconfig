@@ -4,5 +4,5 @@
 [core]
 [sendmail]
 [push]
-    default = simple
+    default = current
 

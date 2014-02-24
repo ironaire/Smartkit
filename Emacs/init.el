@@ -1175,6 +1175,9 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (setq jde-help-remote-file-exists-function '("beanshell"))
 (load "jde")
 
-;; load color theme solarized
-;;(add-to-list 'load-path "~/.emacs.d/addons/emacs-colors-solarized")
-;;(require 'color-theme-solarized)
+;; set emacs theme based on running in terminal or xterm
+(defun on-after-init ()
+  (unless (display-graphic-p (selected-frame))
+    (set-face-background 'default "unspecified-bg" (selected-frame))))
+
+(add-hook 'window-setup-hook 'on-after-init)

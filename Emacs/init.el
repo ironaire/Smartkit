@@ -85,14 +85,14 @@
 
 ;;;; set emacs plugin, emacs plugin ends with el
 ;;;; I store all plugins to ~/.emacs.d/, the same with my init.el
+;; M+x color-theme-select to select another theme
 (add-to-list 'load-path "~/.emacs.d/addons")
 (require 'color-theme)
+(require 'color-theme-solarized)
+(color-theme-solarized-dark)
+
+;; my org template file mode
 (require 'template-org)
-
-;; this is the theme chosen, the calm forest is its name in lower case
-;; M+x color-theme-select to select another theme
-(color-theme-aalto-light)
-
 ;; set frame size
 (setq initial-frame-alist '((width . 80)(height . 40)))
 
@@ -101,7 +101,7 @@
 ;(add-to-list 'default-frame-alist '(alpha 85 50))
 
 ;; set font size
-(set-face-attribute 'default nil :height 150)
+(set-face-attribute 'default nil :height 128)
 
 ;; enable org mode
 (add-to-list 'auto-mode-alist '("\\.\\(org\\|txt\\)$" . org-mode))
@@ -1174,5 +1174,7 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (add-to-list 'load-path "~/.emacs.d/addons/jdee-2.4.1/lisp")
 (setq jde-help-remote-file-exists-function '("beanshell"))
 (load "jde")
-;; fix wget dependency
 
+;; load color theme solarized
+;;(add-to-list 'load-path "~/.emacs.d/addons/emacs-colors-solarized")
+;;(require 'color-theme-solarized)

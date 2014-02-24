@@ -1,6 +1,5 @@
 **/auto-save-list/
 **/backup/
 **/*[#~]*
-Bash/bash_profile
 Emacs/org-clock-save.el
 Emacs/.org-id-locations

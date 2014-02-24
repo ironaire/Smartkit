@@ -22,7 +22,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-export LS_OPTIONS=' -G --color=auto'
+export LS_OPTIONS=' --color=auto'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -a -lF $LS_OPTIONS'
 alias la='ls -aF $LS_OPTIONS'
@@ -38,6 +38,4 @@ alias grep='grep --color=auto --exclude-dir=\.svn'
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-
+alias emacs='emacs -nw'

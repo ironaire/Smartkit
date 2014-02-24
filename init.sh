@@ -18,6 +18,8 @@ bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 bash_project="${bash}/bash_project"
+dircolors_dark="${bash}/dircolors.solarized-dark"
+set_terminal_solarized_theme="${bash}/gnome-terminal-colors-solarized/set_dark.sh"
 dotgitconfig="$HOME/.gitconfig"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
@@ -26,6 +28,7 @@ dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
 dotbash_project="$HOME/.bash_project"
+dotdir_colors="$HOME/.dir_colors"
 # test if .gitconfig exists
 if [ -e "${dotgitconfig}" ]
 then
@@ -64,7 +67,7 @@ then
     rm -rf ${dotemacsdotd} || { echo "Removing ${dotemacsdotd} failed"; exit 1; }
 fi
 echo "Create symbolic for ${dotemacsdotd}"
-ln -f -s ${emacs} ${dotemacsdotd} || { echo "Creating sysmbolic ${dotemacsdotd} failed"; exit 1; }
+ln -f -s ${emacs} ${dotemacsdotd} || { echo "Creating symbolic ${dotemacsdotd} failed"; exit 1; }
 echo "${dotemacsdotd} created"
 echo `ls -l ${dotemacsdotd}`
 # create symbolic for .bashrc
@@ -74,7 +77,7 @@ then
     rm -rf ${dotbashrc} || { echo "Removing ${dotbashrc} failed"; exit 1; }
 fi
 echo "Create symbolic for ${dotbashrc}"
-ln -f -s ${bashrc} ${dotbashrc} || { echo "Creating sysmbolic ${dotbashrc} failed"; exit 1; }
+ln -f -s ${bashrc} ${dotbashrc} || { echo "Creating symbolic ${dotbashrc} failed"; exit 1; }
 echo "${dotbashrc} created"
 echo `ls -l ${dotbashrc}`
 # create symbolic for .bash_aliases
@@ -84,7 +87,7 @@ then
     rm -rf ${dotbash_aliases} || { echo "Removing ${dotbash_aliases} failed"; exit 1; }
 fi
 echo "Create symbolic for ${dotbash_aliases}"
-ln -f -s ${bash_aliases} ${dotbash_aliases} || { echo "Creating sysmbolic ${dotbash_aliases} failed"; exit 1; }
+ln -f -s ${bash_aliases} ${dotbash_aliases} || { echo "Creating symbolic ${dotbash_aliases} failed"; exit 1; }
 echo "${dotbash_aliases} created"
 echo `ls -l ${dotbash_aliases}`
 # create symbolic for .bash_profile
@@ -94,7 +97,7 @@ then
     rm -rf ${dotbash_profile} || { echo "Removing ${dotbash_profile} failed"; exit 1; }
 fi
 echo "Create symbolic for ${dotbash_profile}"
-ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating sysmbolic ${dotbash_profile} failed"; exit 1; }
+ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
 # create symbolic for .bash_project
@@ -104,6 +107,21 @@ then
     rm -rf ${dotbash_project} || { echo "Removing ${dotbash_project} failed"; exit 1; }
 fi
 echo "Create symbolic for ${dotbash_project}"
-ln -f -s ${bash_project} ${dotbash_project} || { echo "Creating sysmbolic ${dotbash_project} failed"; exit 1; }
+ln -f -s ${bash_project} ${dotbash_project} || { echo "Creating symbolic ${dotbash_project} failed"; exit 1; }
 echo "${dotbash_project} created"
 echo `ls -l ${dotbash_project}`
+# create symbolic for .dir_colors
+if [ -e ${dotdir_colors} ]
+then
+    echo "${dotdir_colors} exists, remove it"
+    rm -rf ${dotdir_colors} || { echo "Removing ${dotdir_colors} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotdir_colors}"
+ln -f -s ${dircolors_dark} ${dotdir_colors} || { echo "Creating symbolic ${dotdir_colors} failed"; exit 1; }
+echo "${dotdir_colors} created"
+echo `ls -l ${dotdir_colors}`
+# set solarized dark theme to be terminal default theme
+eval `dircolors ${dotdir_colors}`
+chmod +x ${set_terminal_solarized_theme}
+${set_terminal_solarized_theme} || { echo "Setting color solarized dark theme failed"; exit 1; }
+echo "Color solarized dark theme set"

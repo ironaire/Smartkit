@@ -30,8 +30,8 @@
 ;;         (if (string-match "[^\t ]*\\([\t ]+\\)$" (buffer-substring-no-properties (- p movement) p))
 ;;             (backward-delete-char (- (match-end 1) (match-beginning 1)))
 ;;           (call-interactively 'backward-delete-char))))))
-(setq view-diary-entries-initially t) ; show diary initially
-(setq diary-file "~/.emacs.d/diary") ; set diary file
+;; (setq view-diary-entries-initially t) ; show diary initially
+;; (setq diary-file "~/.emacs.d/diary") ; set diary file
 ;(calendar)
 ;(add-hook 'after-init-hook '(lambda () (org-agenda-list 1))) ; show today agenda
 ;; set PATH, because we don't load .bashrc
@@ -1180,3 +1180,5 @@ Late deadlines first, then scheduled, then non-late deadlines"
    (unless (display-graphic-p (selected-frame))
      (set-face-background 'default "unspecified-bg" (selected-frame))))
 (add-hook 'window-setup-hook 'on-after-init)
+;; set activate links symbols
+;; (setq org-activate-links '(delq 'bracket org-activate-links))

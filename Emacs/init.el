@@ -97,7 +97,7 @@
 (setq initial-frame-alist '((width . 80)(height . 40)))
 
 ;; set background transparency
-(set-frame-parameter (selected-frame) 'alpha '(80 50))
+(set-frame-parameter (selected-frame) 'alpha '(95 70))
 ;(add-to-list 'default-frame-alist '(alpha 85 50))
 
 ;; set font size
@@ -1177,7 +1177,6 @@ Late deadlines first, then scheduled, then non-late deadlines"
 
 ;; set emacs theme based on running in terminal or xterm
 (defun on-after-init ()
-  (unless (display-graphic-p (selected-frame))
-    (set-face-background 'default "unspecified-bg" (selected-frame))))
-
+   (unless (display-graphic-p (selected-frame))
+     (set-face-background 'default "unspecified-bg" (selected-frame))))
 (add-hook 'window-setup-hook 'on-after-init)

@@ -110,28 +110,4 @@ echo "Create symbolic for ${dotbash_project}"
 ln -f -s ${bash_project} ${dotbash_project} || { echo "Creating symbolic ${dotbash_project} failed"; exit 1; }
 echo "${dotbash_project} created"
 echo `ls -l ${dotbash_project}`
-# create symbolic for .dir_colors, this is only necessary for ubuntu linux
-if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
-then
-    # if the os type is ubuntu
-    if [ -e ${dotdir_colors} ]
-    then
-	    echo "${dotdir_colors} exists, remove it"
-	    rm -rf ${dotdir_colors} || { echo "Removing ${dotdir_colors} failed"; exit 1; }
-    fi
-    echo "Create symbolic for ${dotdir_colors}"
-    ln -f -s ${dircolors_dark} ${dotdir_colors} || { echo "Creating symbolic ${dotdir_colors} failed"; exit 1; }
-    echo "${dotdir_colors} created"
-    echo `ls -l ${dotdir_colors}`
-    # set solarized dark theme to be terminal default theme
-    eval `dircolors ${dotdir_colors}`
-    chmod +x ${set_terminal_solarized_theme}
-    ${set_terminal_solarized_theme} || { echo "Setting color solarized dark theme failed"; exit 1; }
-    echo "Color solarized dark theme set"
-elif [ "$(uname)" == "Darwin" ]
-then
-# do something for mac os
-elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]
-then 
-# do something for windows nt
-fi
+

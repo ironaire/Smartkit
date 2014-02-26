@@ -1154,27 +1154,6 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (require 'textmate)
 (tm/initialize)
 
-;; add evil vim-like key binding
-;; (add-to-list 'load-path "~/.emacs.d/addons/evil")
-;; (require 'evil)
-;; (evil-mode 1)
-
-;; define a function to auto indent to input position
-;; (defun newlines-autoindent-input()
-;;   (interactive)
-;;   (newline-and-indent)
-;;   (setq cursor '(point))
-;;   (newline-and-indent)
-;;   (previous-line)
-;;   (goto-char cursor)
-;;   (forward-char 4)
-;;)
-
-;; jdee
-(add-to-list 'load-path "~/.emacs.d/addons/jdee-2.4.1/lisp")
-(setq jde-help-remote-file-exists-function '("beanshell"))
-(load "jde")
-
 ;; set emacs theme based on running in terminal or xterm
 (defun on-after-init ()
    (unless (display-graphic-p (selected-frame))

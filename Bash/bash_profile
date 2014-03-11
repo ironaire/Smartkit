@@ -2,6 +2,11 @@ if [ -e ~/.bashrc  ]
 then
     . ~/.bashrc
 fi
+if [ -e ~/.bash_project  ]
+then
+    . ~/.bash_project
+fi
+
 
 WORKSHOP=~/Workshop
 WORKSPACE=~/Workspace

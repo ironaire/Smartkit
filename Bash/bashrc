@@ -22,7 +22,5 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
-# set ls colors
-if [ -f ~/.dir_colors ]; then
-   eval `dircolors ~/.dir_colors`
-fi
+export EDITOR=emacs
+

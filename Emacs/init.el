@@ -1157,9 +1157,7 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (add-hook 'window-setup-hook 'on-after-init)
 ;; set activate links symbols
 ;; (setq org-activate-links '(delq 'bracket org-activate-links))
-<<<<<<< HEAD
 
-=======
 (add-to-list 'load-path "~/.emacs.d/addons/emacs-nav")
 (require 'nav)
 (nav-disable-overeager-window-splitting)

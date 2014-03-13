@@ -1149,10 +1149,6 @@ Late deadlines first, then scheduled, then non-late deadlines"
               :gap-ok-around ("4:00"))))
 ;(setq org-time-clocksum-format '(:hours "%02d" :require-hours t :minutes ":%02d" :require-minutes t))
 (global-set-key "\C-x;" 'comment-region)
-;; add textmate auto pair
-(add-to-list 'load-path "~/.emacs.d/addons/emacs-textmate")
-(require 'textmate)
-(tm/initialize)
 
 ;; set emacs theme based on running in terminal or xterm
 (defun on-after-init ()
@@ -1161,3 +1157,4 @@ Late deadlines first, then scheduled, then non-late deadlines"
 (add-hook 'window-setup-hook 'on-after-init)
 ;; set activate links symbols
 ;; (setq org-activate-links '(delq 'bracket org-activate-links))
+

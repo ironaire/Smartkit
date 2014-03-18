@@ -79,3 +79,8 @@ set fileencoding=utf8
 " set file encoding order
 set fileencodings=ucs-bom,gb18030,utf-8,default
 
+" notes setting
+let g:notes_directories = ['~/.vim/Notes']
+let g:notes_suffix = '.txt'
+let g:notes_title_sync = 'rename_file'
+

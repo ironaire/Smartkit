@@ -3,3 +3,6 @@
 **/*[#~]*
 Emacs/org-clock-save.el
 Emacs/.org-id-locations
+Bash/bash_aliases
+Bash/bash_profile
+

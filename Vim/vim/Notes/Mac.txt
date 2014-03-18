@@ -1,0 +1,9 @@
+Mac
+
+• Prevent .DS_Store file created on network drivers
+   run this command in terminal:
+   defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+• Disable Mac requesting to use newly plugin drive as time machine backup
+   run this command in terminal:
+   defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool TRUE
+   

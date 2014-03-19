@@ -18,14 +18,14 @@ Bundle 'gmarik/vundle'
 " My bundles here
 " 
 " original repos on github
-"Bundle 'xolox/vim-misc'
-"Bundle 'xolox/vim-notes'
-"Bundle 'altercation/vim-colors-solarized'
-"Bundle 'scrooloose/nerdtree'
-"Bundle 'Raimondi/delimitMate'
-"Bundle 'Yggdroot/indentLine'
-"Bundle 'ervandew/supertab'
-"Bundle 'SirVer/ultisnips'
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-notes'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Raimondi/delimitMate'
+Bundle 'Yggdroot/indentLine'
+Bundle 'ervandew/supertab'
+Bundle 'SirVer/ultisnips'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -105,13 +105,11 @@ let g:notes_suffix = '.txt'
 let g:notes_title_sync = 'rename_file'
 
 " color theme setting
-colorscheme solarized
 set background=dark "light for light version
 if has('gui_running')
+    colorscheme solarized
     set background=light
     set guifont=Monaco:h15
-else
-    set background=dark
 endif
 
 " ultisnippets setting, ultisnips is used in insert mode

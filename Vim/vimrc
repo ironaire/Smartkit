@@ -5,6 +5,27 @@
 
 " User vim settings, rather than VI settings
 set nocompatible
+filetype off	"required
+filetype plugin indent on	"required
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let vundle manage vundle
+" required
+Bundle 'gmarik/vundle'
+
+" My bundles here
+" 
+" original repos on github
+"Bundle 'xolox/vim-misc'
+"Bundle 'xolox/vim-notes'
+"Bundle 'altercation/vim-colors-solarized'
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'Raimondi/delimitMate'
+"Bundle 'Yggdroot/indentLine'
+"Bundle 'ervandew/supertab'
+"Bundle 'SirVer/ultisnips'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -59,10 +80,9 @@ set notildeop
 " Make syntax work in terminal Vim
 set term=builtin_ansi
 " Runtime path manipulation
-execute pathogen#infect()
+" execute pathogen#infect()
 " Turn on syntax
 syntax on
-filetype plugin indent on
 
 " Vertical line indentation
 let g:indentLine_color_term = 239

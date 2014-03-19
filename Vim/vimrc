@@ -116,6 +116,6 @@ endif
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsExpandTrigger="ii"
 let g:ultiSnipsListSnipets="iI"
-let g:UltiSnipsJumpForwardTrigger="II"
-let g:UltiSnipsJumpBackwardTrigger="OO"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 

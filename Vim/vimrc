@@ -115,7 +115,7 @@ endif
 " ultisnippets setting, ultisnips is used in insert mode
 let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
 let g:UltiSnipsExpandTrigger="ii"
-let g:ultiSnipsListSnipets="iI"
+let g:ultiSnipsListSnippets="iI"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 

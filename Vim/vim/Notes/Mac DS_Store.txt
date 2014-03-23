@@ -1,4 +1,4 @@
-Mac
+Mac DS_Store
 
 • Prevent .DS_Store file created on network drivers
    run this command in terminal:

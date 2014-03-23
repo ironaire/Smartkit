@@ -1,6 +1,5 @@
-Bach
+Bracket and Parentheses in Bash
 
-• Bracket and Parentheses in Bash
    ◦ Brackets
       ◦ if [ condition ] # test condition
       ◦ if [[ condition ]] # bash buildin test condition

@@ -1,5 +1,9 @@
 **/auto-save-list/
 **/backup/
 **/*[#~]*
-Emacs/org-clock-save.el
 Emacs/.org-id-locations
+Bash/bash_aliases
+Vim/vim/bundle/*
+Vim/vim/bundle/*/
+!/Vim/vim/bundle/vundle
+

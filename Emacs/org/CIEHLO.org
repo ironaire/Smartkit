@@ -4,7 +4,8 @@
 #+EMAIL: shunchao.wang@osumc.edu
 
 * Tasks
-** NEXT Technical Investigation                                    :ANALYSIS:
+** DONE Technical Investigation                                   :ANALYSIS:
+CLOSED: [2014-03-17 Mon 09:11]
 *** Flat File Model: CSV, Spreadsheet
 - difficult to OOP
 - No schema and dtd
@@ -35,17 +36,35 @@ CLOCK: [2014-02-14 Fri 10:05]--[2014-02-14 Fri 10:06] =>  0:01
 :END:
 [2014-02-14 Fri 10:05]
 *** 
-** HOLD Create sample OSGi projects                           :WAITING:HOLD:
+** DONE Create sample OSGi projects
+CLOSED: [2014-03-17 Mon 09:11]
+- State "DONE"       from "HOLD"       [2014-03-17 Mon 09:11]
 - State "HOLD"       from "TODO"       [2014-02-14 Fri 10:35] \\
   Backlog.
   :LOGBOOK:
   CLOCK: [2014-02-14 Fri 10:33]--[2014-02-14 Fri 10:34] =>  0:01
   :END:
   [2014-02-14 Fri 10:33]
-** NEXT Look into project structure of ACR-RISE and reuse to CIELHO. :ANALYSIS:
+** CANCELLED Look into project structure of ACR-RISE and reuse to CIELHO. :ANALYSIS:CANCELLED:
+CLOSED: [2014-03-17 Mon 09:11]
+- State "CANCELLED"  from "NEXT"       [2014-03-17 Mon 09:11] \\
+  We user standard grails app structure.
 :LOGBOOK:
 CLOCK: [2014-02-27 Thu 09:28]--[2014-02-27 Thu 09:29] =>  0:01
 :END:
   [2014-02-27 Thu 09:28]
+** NEXT User Registration and Confirmation
+:LOGBOOK:
+CLOCK: 
+CLOCK: 
+CLOCK: 
+CLOCK: 
+CLOCK: 
+CLOCK: [2014-03-17 Mon 09:11]--[2014-03-17 Mon 11:52] =>  2:41
+:END:
+  [2014-03-17 Mon 09:10]
 * Notes
+:LOGBOOK:
+CLOCK: [2014-03-17 Mon 13:01]--[2014-03-17 Mon 13:02] =>  0:01
+:END:
 

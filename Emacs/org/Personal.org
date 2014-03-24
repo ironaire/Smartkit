@@ -4,8 +4,10 @@
 #+EMAIL: shunchao.wang@osumc.edu
 
 * Tasks
-** TODO Acpuncture
-SCHEDULED: <2014-02-12 Wed 12:00>
+** CANCELLED Acpuncture                                          :CANCELLED:
+CLOSED: [2014-03-17 Mon 09:11] SCHEDULED: <2014-02-12 Wed 12:00>
+- State "CANCELLED"  from "TODO"       [2014-03-17 Mon 09:11] \\
+  Done with it.
   [2014-02-11 Tue 10:22]
 * Notes
 

@@ -77,7 +77,6 @@ set showmatch
 " Allow tilde to act as an operator
 set notildeop
 
-" Make syntax work in terminal Vim
 " Turn on syntax
 syntax on
 
@@ -91,10 +90,14 @@ let delimitMate_expand_cr = 1
 " NERDTree configuration
 "nmap <leader>d :NERDTreeToggle<CR>
 
+" set encoding, fileencoding, fileencodings
+set encoding=utf-8
+" set langmenu=zh_CN.UTF-8
+" language message zh_CN.UTF-8
 " set new file encoding
-set fileencoding=utf8
+set fileencoding=utf-8
 " set file encoding order
-set fileencodings=ucs-bom,gb18030,utf-8,default
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " notes setting
 let g:notes_directories = ['~/.vim/Notes']

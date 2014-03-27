@@ -78,9 +78,6 @@ set showmatch
 set notildeop
 
 " Make syntax work in terminal Vim
-set term=builtin_ansi
-" Runtime path manipulation
-" execute pathogen#infect()
 " Turn on syntax
 syntax on
 

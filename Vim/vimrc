@@ -25,7 +25,6 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Yggdroot/indentLine'
 Bundle 'ervandew/supertab'
-Bundle 'SirVer/ultisnips'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -111,11 +110,4 @@ if has('gui_running')
     set background=light
     set guifont=Monaco:h15
 endif
-
-" ultisnippets setting, ultisnips is used in insert mode
-let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
-let g:UltiSnipsExpandTrigger="ii"
-let g:ultiSnipsListSnippets="iI"
-let g:UltiSnipsJumpForwardTrigger="<c-l>"
-let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 

@@ -1,5 +1,6 @@
-Bracket and Parentheses in Bash
-
+Bash
+ 
+• Bracket and Parentheses in Bash
    ◦ Brackets
       ◦ if [ condition ] # test condition
       ◦ if [[ condition ]] # bash buildin test condition
@@ -23,4 +24,21 @@ Bracket and Parentheses in Bash
       ◦ var=$(( 20 + 5 )) # integer arithmetic with variable assignment
       ◦ (( var++ )) (( var— )) # c-style variable increment/decrement
       ◦ (( var0 = var1 < 98 ? 9 : 21 )) # c-style trinary operation
+
+• SSH to a remote machine without a password
+   ◦ Generate SSH key pairs on local machine
+      ◦ Create .ssh dir in the $HOME: mkdir -p $HOME/.ssh
+      ◦ Change .ssh permission: chmod 0700 $HOME/.ssh
+      ◦ Generate key pairs using ssh key tool: ssh-keygen
+         ▸ Follow the prompt
+         ▸ This should result in two files: $HOME/.ssh/id_rsa and $HOME/.ssh/id_rsa.pub
+      ◦ Copy public key to the remote machine: scp $HOME/.ssh/id_rsa.pub <user>@<remote>:<path>
+   ◦ Append public key to the authorized keychain on remote machine
+      ◦ Create .ssh dir on remote: mkdir -p $HOME/.ssh
+      ◦ Change permission: chmod 0700 $HOME/.ssh
+      ◦ Append uploaded public key to authorized_keys: cat <path>/id_ras.pub >> $HOME/.ssh/authorized_keys
+      ◦ Change permission for authorized_keys: chmod 0600 $HOME./.ssh/authorized_keys
+   ◦ SSH to the remote machine on local machine
+      ◦ ssh -i $HOME/.ssh/.id_rsa <user>@<remote>
+      ◦ An optional alias can be created for future shortcut: alias ssh<name>=’ssh -2 -x <user>@<remote>’
 

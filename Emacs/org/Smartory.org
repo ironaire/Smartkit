@@ -14,5 +14,10 @@
   [2014-05-16 Fri 08:14]
 ** TODO Update listArchive.gsp to not show 'Operation' with archived items :DEVELOPMENT:
   [2014-05-16 Fri 08:20]
+** TODO Set archived when user register				:DEVELOPMENT:
+   :LOGBOOK:
+   CLOCK: [2014-05-16 Fri 13:25]--[2014-05-16 Fri 13:26] =>  0:01
+   :END:
+   [2014-05-16 Fri 13:25]
 * Notes
 

@@ -53,7 +53,8 @@ CLOSED: [2014-03-17 Mon 09:11]
 CLOCK: [2014-02-27 Thu 09:28]--[2014-02-27 Thu 09:29] =>  0:01
 :END:
   [2014-02-27 Thu 09:28]
-** NEXT User Registration and Confirmation
+** DONE User Registration and Confirmation
+CLOSED: [2014-05-16 Fri 08:23]
 :LOGBOOK:
 CLOCK: 
 CLOCK: 

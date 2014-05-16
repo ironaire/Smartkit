@@ -1,0 +1,18 @@
+#+TITLE: Smartory.org 
+#+DATE: Fri May 16 08:13:56 2014
+#+AUTHOR: Shunchao Wang
+#+EMAIL: shunchao.wang@osumc.edu
+
+* Tasks
+** TODO Update DataSource.config                               :DEVELOPMENT:
+  [ ] dev env to use h2 db
+  [ ] test env to use mysql
+  [ ] prod to use tomcat jndi resource
+  :LOGBOOK:
+  CLOCK: [2014-05-16 Fri 08:14]--[2014-05-16 Fri 08:15] =>  0:01
+  :END:
+  [2014-05-16 Fri 08:14]
+** TODO Update listArchive.gsp to not show 'Operation' with archived items :DEVELOPMENT:
+  [2014-05-16 Fri 08:20]
+* Notes
+

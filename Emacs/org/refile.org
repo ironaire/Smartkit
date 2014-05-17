@@ -65,8 +65,3 @@
   [[file:~/.emacs.d/init.el::"*%20NOTE%20%25?\n%20%25U\n"%20:clock-resume%20t)][file:~/.emacs.d/init.el::"* NOTE %?\n %U\n" :clock-resume t)]]
 * NOTE 
   [2014-01-24 Fri 18:10]
-* NOTE 
-  :LOGBOOK:
-  CLOCK: [2014-01-24 Fri 18:12]--[2014-01-24 Fri 18:14] =>  0:02
-  :END:
-  [2014-01-24 Fri 18:12]

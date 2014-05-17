@@ -1,0 +1,17 @@
+Set Character Set to be UTF8 for MySQL 5.5+
+
+• Use following commands to check current character set of mysql
+   ◦ show variables like ‘character_set_%’
+• Edit /etc/mysql/my.cnf # windows should be my.ini under some path
+   ◦ Set character set of mysql client
+      [client]
+      default-character-set=utf8
+   ◦ Set character set of mysqld
+      [server]
+      default-storage-engine=INNODB
+      character-set-server=utf8
+      collation-server=utf8_unicode_ci
+• Change database character set to be utf8
+   ALTER DATABASE <name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+• Change table character set to be utf8
+   ALTER TABLE <name> CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;

@@ -3,18 +3,18 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored-marker"
- (filename . "~/Workbench/Emacs/org/CIEHLO.org")
- (front-context-string . "** TODO User Reg")
- (rear-context-string . "2-27 Thu 09:28]\n")
- (position . 1653))
+ (filename . "~/.emacs.d/org/Smartory.org")
+ (front-context-string . "** TODO Update l")
+ (rear-context-string . "5-16 Fri 08:14]\n")
+ (position . 360))
 ("org-refile-last-stored"
- (filename . "~/Workbench/Emacs/org/CIEHLO.org")
- (front-context-string . "** TODO User Reg")
- (rear-context-string . "2-27 Thu 09:28]\n")
- (position . 1653))
+ (filename . "~/.emacs.d/org/Smartory.org")
+ (front-context-string . "** TODO Update l")
+ (rear-context-string . "5-16 Fri 08:14]\n")
+ (position . 360))
 ("org-capture-last-stored"
  (filename . "~/Workbench/Emacs/org/refile.org")
- (front-context-string . "* TODO User Regi")
- (rear-context-string . "1-24 Fri 18:12]\n")
- (position . 3192))
+ (front-context-string . "* TODO Update li")
+ (rear-context-string . "-24 Fri 18:12]\n\n")
+ (position . 3193))
 )

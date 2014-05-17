@@ -114,7 +114,7 @@ if has('gui_running')
     set guifont=Monaco:h15
 endif
 
-" UltiSnips setting
+" Ultisnips setting
 let g:UltiSnipsExpandTrigger="ii"
 let g:UltiSnipsListSnippets="iI"
 let g:UltiSnipsJumpForwardTrigger="II"

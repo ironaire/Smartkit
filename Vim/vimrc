@@ -25,6 +25,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'Raimondi/delimitMate'
 Bundle 'Yggdroot/indentLine'
 Bundle 'ervandew/supertab'
+Bundle 'sirVer/ultisnips'
+" Ultisnips useful snippets
+Bundle 'honza/vim-snippets'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -110,4 +113,10 @@ if has('gui_running')
     set background=light
     set guifont=Monaco:h15
 endif
+
+" UltiSnips setting
+let g:UltiSnipsExpandTrigger="ii"
+let g:UltiSnipsListSnippets="iI"
+let g:UltiSnipsJumpForwardTrigger="II"
+let g:UltiSnipsJumpBackwardTrigger="OO"
 

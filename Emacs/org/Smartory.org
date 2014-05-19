@@ -4,7 +4,8 @@
 #+EMAIL: shunchao.wang@osumc.edu
 
 * Tasks
-** TODO Update DataSource.config                               :DEVELOPMENT:
+** DONE Update DataSource.config				:DEVELOPMENT:
+   CLOSED: [2014-05-17 Sat 09:21]
   [ ] dev env to use h2 db
   [ ] test env to use mysql
   [ ] prod to use tomcat jndi resource
@@ -12,9 +13,11 @@
   CLOCK: [2014-05-16 Fri 08:14]--[2014-05-16 Fri 08:15] =>  0:01
   :END:
   [2014-05-16 Fri 08:14]
-** TODO Update listArchive.gsp to not show 'Operation' with archived items :DEVELOPMENT:
+** DONE Update listArchive.gsp to not show 'Operation' with archived items :DEVELOPMENT:
+   CLOSED: [2014-05-17 Sat 09:32]
   [2014-05-16 Fri 08:20]
-** TODO Set archived when user register				:DEVELOPMENT:
+** DONE Set archived when user register				:DEVELOPMENT:
+   CLOSED: [2014-05-17 Sat 09:24]
    :LOGBOOK:
    CLOCK: [2014-05-16 Fri 13:25]--[2014-05-16 Fri 13:26] =>  0:01
    :END:

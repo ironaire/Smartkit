@@ -2,10 +2,16 @@ if [ -e ~/.bashrc  ]
 then
     . ~/.bashrc
 fi
-if [ -e ~/.bash_project  ]
-then
-    . ~/.bash_project
-fi
+
+# Triton ssh aliases to dev machines on RDMZ
+alias sshTritonUI='ssh -2 -X cagrid@triton.bmi.osumc.edu'
+alias sshTritonDS='ssh -2 -X cagrid@triton-directory.bmi.osumc.edu'
+alias sshTritonPS='ssh -2 -X cagrid@triton-protocol.bmi.osumc.edu'
+alias sshTritonPaS='ssh -2 -X cagrid@triton-participant.bmi.osumc.edu'
+alias sshTritonTS='ssh -2 -X cagrid@triton-tissue.bmi.osumc.edu'
+alias sshCSM='ssh -2 -X cagrid@csm.bmi.osumc.edu'
+alias sshRIEQP='ssh -2 -X wan119@hcl-qp-dev.bmi.osumc.edu'
+alias sshCIE='ssh -2 -X wan119@140.254.126.244'
 
 
 WORKSHOP=~/Workshop

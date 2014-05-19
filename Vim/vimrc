@@ -28,6 +28,7 @@ Bundle 'ervandew/supertab'
 Bundle 'sirVer/ultisnips'
 " Ultisnips useful snippets
 Bundle 'honza/vim-snippets'
+Bundle 'jceb/vim-orgmode'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9

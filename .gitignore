@@ -2,6 +2,7 @@
 **/backup/
 **/*[#~]*
 Emacs/.org-id-locations
+Emacs/org-clock-save.el
 Bash/bash_aliases
 Vim/vim/bundle/*
 Vim/vim/bundle/*/

@@ -13,14 +13,12 @@ alias sshCSM='ssh -2 -X cagrid@csm.bmi.osumc.edu'
 alias sshRIEQP='ssh -2 -X wan119@hcl-qp-dev.bmi.osumc.edu'
 alias sshCIE='ssh -2 -X wan119@140.254.126.244'
 
+WORKBENCH=~/Workbench
 
-WORKSHOP=~/Workshop
-WORKSPACE=~/Workspace
-
-export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.19
-ANT_HOME=${WORKSHOP}/apache-ant-1.8.4
-MVN_HOME=${WORKSHOP}/apache-maven-3.1.1
-GRAILS_HOME=${WORKSHOP}/grails-2.3.6
+export CATALINA_HOME=${WORKBENCH}/apache-tomcat-7.0.52
+ANT_HOME=${WORKBENCH}/apache-ant-1.9.3
+MVN_HOME=${WORKBENCH}/apache-maven-3.2.1
+GRAILS_HOME=${WORKBENCH}/grails-2.3.7
 export JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 
 export PATH=${ANT_HOME}/bin:${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH

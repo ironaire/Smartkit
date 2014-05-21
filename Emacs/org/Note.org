@@ -71,4 +71,21 @@
 * Perl
 * Apache Tomcat
 * JBoss
- 
+* Mysql
+** Set character set to be utf8 for mysql 5.5+
+*** Check current character set of mysql
+- show variables like 'character_set_%'
+*** Edit /etc/mysql/my.cnf (Windows should be my.ini) to set character set [2/2]
+- [X] Set character set of mysql client
+      [client]
+      default-character-set=utf8
+- [X] Set character set of mysqld
+      [server]
+      default-storage-engine=INNODB
+      character-set-server=utf8
+      collation-server=utf8_unicode_ci
+*** Change database character set to be utf8
+- ALTER DATABASE <name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+*** Change table character set to be utf8
+- ALTER TABLE <name> CONVERT TO CHARACTER SET utf8 COLLATE
+  utf8_unicode_ci;

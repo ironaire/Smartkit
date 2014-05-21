@@ -64,6 +64,13 @@ CLOCK:
 CLOCK: [2014-03-17 Mon 09:11]--[2014-03-17 Mon 11:52] =>  2:41
 :END:
   [2014-03-17 Mon 09:10]
+** NEXT Update toString method of domain methods.             :VERIFICATION:
+:LOGBOOK:
+CLOCK: [2014-05-19 Mon 09:05]--[2014-05-19 Mon 15:37] =>  6:32
+:END:
+  [2014-05-19 Mon 09:03]
+** NEXT Remove user profile pic from show user view.          :VERIFICATION:
+  [2014-05-19 Mon 09:04]
 * Notes
 :LOGBOOK:
 CLOCK: [2014-03-17 Mon 13:01]--[2014-03-17 Mon 13:02] =>  0:01

@@ -7,4 +7,5 @@ Bash/bash_aliases
 Vim/vim/bundle/*
 Vim/vim/bundle/*/
 !/Vim/vim/bundle/vundle
+**/.DS_Store
 

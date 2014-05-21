@@ -22,5 +22,17 @@
    CLOCK: [2014-05-16 Fri 13:25]--[2014-05-16 Fri 13:26] =>  0:01
    :END:
    [2014-05-16 Fri 13:25]
+** TODO Create/edit inventory should not show 0 quantity
+   :LOGBOOK:
+   CLOCK: [2014-05-21 Wed 14:54]--[2014-05-21 Wed 14:55] =>  0:01
+   :END:
+   [2014-05-21 Wed 14:54]
+** TODO Home page should display the real warehouse name for the alerts
+   [2014-05-21 Wed 14:55]
+** TODO Missing memo for sale creation
+   :LOGBOOK:
+   CLOCK: [2014-05-21 Wed 14:55]--[2014-05-21 Wed 14:56] =>  0:01
+   :END:
+   [2014-05-21 Wed 14:55]
 * Notes
 

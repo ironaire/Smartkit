@@ -22,14 +22,18 @@
    CLOCK: [2014-05-16 Fri 13:25]--[2014-05-16 Fri 13:26] =>  0:01
    :END:
    [2014-05-16 Fri 13:25]
-** TODO Create/edit inventory should not show 0 quantity
+** DONE Create/edit inventory should not show 0 quantity
+   CLOSED: [2014-05-21 Wed 19:52]
    :LOGBOOK:
+   CLOCK: [2014-05-21 Wed 19:07]--[2014-05-21 Wed 19:52] =>  0:45
    CLOCK: [2014-05-21 Wed 14:54]--[2014-05-21 Wed 14:55] =>  0:01
    :END:
    [2014-05-21 Wed 14:54]
-** TODO Home page should display the real warehouse name for the alerts
+** DONE Home page should display the real warehouse name for the alerts
+   CLOSED: [2014-05-21 Wed 19:54]
    [2014-05-21 Wed 14:55]
-** TODO Missing memo for sale creation
+** DONE Missing memo for sale creation
+   CLOSED: [2014-05-22 Thu 08:21]
    :LOGBOOK:
    CLOCK: [2014-05-21 Wed 14:55]--[2014-05-21 Wed 14:56] =>  0:01
    :END:

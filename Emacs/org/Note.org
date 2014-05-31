@@ -70,6 +70,16 @@
 * Awk
 * Perl
 * Apache Tomcat
+** Set own webapp to appear as ROOT
+- Option 1: Rename web app to be ROOT
+- Option 2: If there is not ROOT app under webapps, edit
+  conf/server.xml file and add own context element within the default
+  <Host>: <Context path="" docBase="<own_site>"/>
+- Option 3: Create another seprate host in conf/server.xml: <Host
+  name="anotherhost" appBase="webapps_anotherhost"></Host>; then
+  create webapps_anotherhost folder to host the app, like ROOT, etc.
+** Change tomcat running port
+- edit conf/server.xml, locate <Connector> node, change attribute port="80" 
 * JBoss
 * Mysql
 ** Set character set to be utf8 for mysql 5.5+

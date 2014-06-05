@@ -30,6 +30,7 @@ Bundle 'sirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
+" Bundle 'majutsushi/tagbar'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -135,4 +136,21 @@ let g:UltiSnipsExpandTrigger="ii"
 let g:UltiSnipsListSnippets="iI"
 let g:UltiSnipsJumpForwardTrigger="II"
 let g:UltiSnipsJumpBackwardTrigger="OO"
+
+" Tagbar settings
+" nnoremap <silent> <Leader>b :TagbarToggle<CR>
+" let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+" let g:tagbar_sidth=24
+
+"" Tagbar groovy support
+" let g:tagbar_type_groovy = {
+"     \ 'ctagstype' : 'groovy',
+"     \ 'kinds' : [
+"     \ 'p:package',
+"     \ 'c:class',
+"     \ 'i:interface',
+"     \ 'f:function',
+"     \ 'v:variables'
+"     \ ]
+" \ }
 

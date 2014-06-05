@@ -31,6 +31,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
 " Bundle 'majutsushi/tagbar'
+" Bundle 'vim-scripts/taglist.vim'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -153,4 +154,11 @@ let g:UltiSnipsJumpBackwardTrigger="OO"
 "     \ 'v:variables'
 "     \ ]
 " \ }
+
+" Taglist settings
+" nnoremap <silent> <Leader>b :TlistToggle<CR>
+" let Tlist_WinWidth = 24
+" let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+" let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;'.'f:functions;v:variables'
+" set tags=./tags,./TAGS,tags;~,TAGS;~
 

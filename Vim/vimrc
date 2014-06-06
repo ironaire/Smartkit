@@ -30,8 +30,7 @@ Bundle 'sirVer/ultisnips'
 Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
-" Bundle 'majutsushi/tagbar'
-" Bundle 'vim-scripts/taglist.vim'
+Bundle 'majutsushi/tagbar'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -111,10 +110,10 @@ let g:notes_suffix = '.txt'
 let g:notes_title_sync = 'rename_file'
 
 " color theme setting
-set background=dark "light for light version
+set background=dark " light for light version
 if has('gui_running')
     colorscheme solarized
-    set background=light
+    set background=dark " dark or light
     set guifont=Monaco:h15
 endif
 
@@ -139,26 +138,19 @@ let g:UltiSnipsJumpForwardTrigger="II"
 let g:UltiSnipsJumpBackwardTrigger="OO"
 
 " Tagbar settings
-" nnoremap <silent> <Leader>b :TagbarToggle<CR>
-" let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-" let g:tagbar_sidth=24
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_sidth=24
 
 "" Tagbar groovy support
-" let g:tagbar_type_groovy = {
-"     \ 'ctagstype' : 'groovy',
-"     \ 'kinds' : [
-"     \ 'p:package',
-"     \ 'c:class',
-"     \ 'i:interface',
-"     \ 'f:function',
-"     \ 'v:variables'
-"     \ ]
-" \ }
-
-" Taglist settings
-" nnoremap <silent> <Leader>b :TlistToggle<CR>
-" let Tlist_WinWidth = 24
-" let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-" let tlist_groovy_settings = 'groovy;p:package;c:class;i:interface;'.'f:functions;v:variables'
-" set tags=./tags,./TAGS,tags;~,TAGS;~
+let g:tagbar_type_groovy = {
+    \ 'ctagstype' : 'groovy',
+    \ 'kinds' : [
+    \ 'p:package',
+    \ 'c:class',
+    \ 'i:interface',
+    \ 'f:function',
+    \ 'v:variables'
+    \ ]
+\ }
 

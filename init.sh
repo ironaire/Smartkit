@@ -9,6 +9,7 @@ workbench="$PWD"
 echo $workbench
 misc="$workbench/Misc"
 gitconfig="${misc}/gitconfig"
+ctags="${misc}/ctags"
 vim="$workbench/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -21,6 +22,7 @@ bash_project="${bash}/bash_project"
 dircolors_dark="${bash}/dircolors.solarized-dark"
 set_terminal_solarized_theme="${bash}/gnome-terminal-colors-solarized/set_dark.sh"
 dotgitconfig="$HOME/.gitconfig"
+dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotemacsdotd="$HOME/.emacs.d"
@@ -39,6 +41,17 @@ echo "Create symbolic for ${dotgitconfig}"
 ln -f -s ${gitconfig} ${dotgitconfig} || { echo "Creating symbolic ${dotgitconfig} failed"; exit 1; }
 echo "${dotgitconfig} created"
 echo `ls -l ${dotgitconfig}`
+
+# test if .ctags exists
+if [ -e "${dotctags}" ]
+then
+    echo "${dotctags} exists, remove it"
+    rm -rf ${dotctags} || { echo "Removing ${dotctags} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotctags}"
+ln -f -s ${ctags} ${dotctags} || { echo "Creating symbolic ${dotctags} failed"; exit 1; }
+echo "${dotctags} created"
+echo `ls -l ${dotctags}`
 
 # test if .vim exists
 if [ -e "${dotvim}" ]

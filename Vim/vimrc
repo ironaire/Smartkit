@@ -96,9 +96,6 @@ let g:indentLine_char = '|'
 " DelimitMate setting
 let delimitMate_expand_cr = 1
 
-" NERDTree configuration
-"nmap <leader>d :NERDTreeToggle<CR>
-
 " set encoding, fileencoding, fileencodings
 set encoding=utf-8
 " set langmenu=zh_CN.UTF-8
@@ -117,8 +114,9 @@ let g:notes_title_sync = 'rename_file'
 set background=dark " light for light version
 if has('gui_running')
     colorscheme solarized
-    set background=dark " dark or light
+    set background=light " dark or light
     set guifont=Monaco:h15
+    set columns=150 lines=45
 endif
 
 " NERDTree setting
@@ -126,6 +124,7 @@ nnoremap <silent> <Leader>t :NERDTreeToggle<CR>
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
+let g:NERDTreeWinSize = 35
 
 " CtrlP setting
 let g:ctrlp_map = '<c-p>'
@@ -144,7 +143,7 @@ let g:UltiSnipsJumpBackwardTrigger="OO"
 " Tagbar settings
 nnoremap <silent> <Leader>b :TagbarToggle<CR>
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_sidth=24
+let g:tagbar_width=31
 
 "" Tagbar groovy support
 let g:tagbar_type_groovy = {

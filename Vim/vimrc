@@ -60,6 +60,7 @@ set cmdheight=2
 " do not keep a backup files
 set nobackup
 set nowritebackup
+set noswapfile
 
 " keep 20 lines of command line history
 set history=20

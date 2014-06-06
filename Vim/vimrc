@@ -115,7 +115,7 @@ let g:notes_title_sync = 'rename_file'
 set background=dark " light for light version
 if has('gui_running')
     colorscheme solarized
-    set background=light " dark or light
+    set background=dark " dark or light
     set guifont=Monaco:h15
     set columns=150 lines=45
 endif

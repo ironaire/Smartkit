@@ -18,9 +18,6 @@ bash="${workbench}/Bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
-bash_project="${bash}/bash_project"
-dircolors_dark="${bash}/dircolors.solarized-dark"
-set_terminal_solarized_theme="${bash}/gnome-terminal-colors-solarized/set_dark.sh"
 dotgitconfig="$HOME/.gitconfig"
 dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
@@ -29,8 +26,6 @@ dotemacsdotd="$HOME/.emacs.d"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
-dotbash_project="$HOME/.bash_project"
-dotdir_colors="$HOME/.dir_colors"
 # test if .gitconfig exists
 if [ -e "${dotgitconfig}" ]
 then
@@ -63,6 +58,7 @@ echo "Create symbolic for ${dotvim}"
 ln -f -s ${vim_d} ${dotvim} || { echo "Creating symbolic ${dotvim} failed"; exit 1; }
 echo "${dotvim} created"
 echo `ls -l ${dotvim}`
+
 # create symbolic for .vimrc
 if [ -e "${dotvimrc}" ]
 then
@@ -73,6 +69,7 @@ echo "Create symbolic for ${dotvimrc}"
 ln -f -s ${vimrc} ${dotvimrc} || { echo "Creating symbolic ${vimrc} failed"; exit 1; }
 echo "${dotvimrc} created"
 echo `ls -l ${dotvimrc}`
+
 # create symbolic for emacs
 if [ -e ${dotemacsdotd} ]
 then
@@ -83,6 +80,7 @@ echo "Create symbolic for ${dotemacsdotd}"
 ln -f -s ${emacs} ${dotemacsdotd} || { echo "Creating symbolic ${dotemacsdotd} failed"; exit 1; }
 echo "${dotemacsdotd} created"
 echo `ls -l ${dotemacsdotd}`
+
 # create symbolic for .bashrc
 if [ -e ${dotbashrc} ]
 then
@@ -93,6 +91,7 @@ echo "Create symbolic for ${dotbashrc}"
 ln -f -s ${bashrc} ${dotbashrc} || { echo "Creating symbolic ${dotbashrc} failed"; exit 1; }
 echo "${dotbashrc} created"
 echo `ls -l ${dotbashrc}`
+
 # create symbolic for .bash_aliases
 if [ -e ${dotbash_aliases} ]
 then
@@ -103,6 +102,7 @@ echo "Create symbolic for ${dotbash_aliases}"
 ln -f -s ${bash_aliases} ${dotbash_aliases} || { echo "Creating symbolic ${dotbash_aliases} failed"; exit 1; }
 echo "${dotbash_aliases} created"
 echo `ls -l ${dotbash_aliases}`
+
 # create symbolic for .bash_profile
 if [ -e ${dotbash_profile} ]
 then
@@ -113,14 +113,4 @@ echo "Create symbolic for ${dotbash_profile}"
 ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
-# create symbolic for .bash_project
-if [ -e ${dotbash_project} ]
-then
-    echo "${dotbash_project} exists, remove it"
-    rm -rf ${dotbash_project} || { echo "Removing ${dotbash_project} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotbash_project}"
-ln -f -s ${bash_project} ${dotbash_project} || { echo "Creating symbolic ${dotbash_project} failed"; exit 1; }
-echo "${dotbash_project} created"
-echo `ls -l ${dotbash_project}`
 

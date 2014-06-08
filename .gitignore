@@ -6,6 +6,6 @@ Emacs/org-clock-save.el
 Bash/bash_aliases
 Vim/tags
 Vim/vim/bundle/*
-!/Vim/vim/bundle/vundle
+!Vim/vim/bundle/vundle/**
 **/.DS_Store
 

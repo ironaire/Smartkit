@@ -33,7 +33,7 @@ alias ..='cd ..'
 
 # Make grep more user friendly by highlight matches,
 # and exclude greeping through .svn folders.
-alias grep='grep --color=auto --exclude-dir=\.svn'
+alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar,war}'
 
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'

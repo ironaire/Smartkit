@@ -1,20 +1,20 @@
 #!/bin/bash
 # init.sh
-# This file will init my bash env setting for my workbench
-# including .bashrc, .bash_aliases, .bash_profile, .bash_project
-# and vim config, emacs config, .gitconfig
+# This file will init my bash env setting for my smart kit
+# including .bashrc, .bash_aliases, .bash_profile
+# and vim config, emacs config, .gitconfig, ctags regex patterns
 # run this file using sh init.sh or ./init.sh if runnable
 
-workbench="$PWD"
-echo $workbench
-misc="$workbench/Misc"
+workDir="$PWD"
+echo $workDir
+misc="$workDir/Misc"
 gitconfig="${misc}/gitconfig"
 ctags="${misc}/ctags"
-vim="$workbench/Vim"
+vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
-emacs="${workbench}/Emacs"
-bash="${workbench}/Bash"
+emacs="${workDir}/Emacs"
+bash="${workDir}/Bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"

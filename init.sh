@@ -114,3 +114,7 @@ ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotba
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
 
+echo "Cloning vim plugin manager vundle"
+git clone https://github.com/gmarik/vundle.git ${dotvim}/bundle/vundle
+echo "Vim vundle clined"
+echo `ls -l ${dotvim}/bundle`

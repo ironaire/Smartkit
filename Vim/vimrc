@@ -118,6 +118,7 @@ if has('gui_running')
     set background=dark " dark or light
     set guifont=Monaco:h15
     set columns=150 lines=45
+    set fuoptions=maxvert,maxhorz
 endif
 
 " NERDTree setting

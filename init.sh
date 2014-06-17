@@ -18,6 +18,8 @@ bash="${workDir}/Bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
+minttyrc="${bash}/minttyrc-solarized-dark"
+dir_colors="${bash}/dircolors.256dark"
 dotgitconfig="$HOME/.gitconfig"
 dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
@@ -26,6 +28,31 @@ dotemacsdotd="$HOME/.emacs.d"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
+dotminttyrc="$HOME/.minttyrc"
+dotdir_colors="$HOME/.dir_colors"
+
+# test if .dir_colors exists
+if [ -e "${dotdir_colors}" ]
+then
+    echo "${dotdir_colors} exists, remove it"
+    rm -rf ${dotdir_colors} || { echo "Removing ${dotdir_colors} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotdir_colors}"
+ln -f -s ${dir_colors} ${dotdir_colors} || { echo "Creating symbolic ${dotdir_colors} failed"; exit 1; }
+echo "${dotdir_colors} created"
+echo `ls -l ${dotdir_colors}`
+
+# test if .minttyrc exists
+if [ -e "${dotminttyrc}" ]
+then
+    echo "${dotminttyrc} exists, remove it"
+    rm -rf ${dotminttyrc} || { echo "Removing ${dotminttyrc} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotminttyrc}"
+ln -f -s ${minttyrc} ${dotminttyrc} || { echo "Creating symbolic ${dotminttyrc} failed"; exit 1; }
+echo "${dotminttyrc} created"
+echo `ls -l ${dotminttyrc}`
+
 # test if .gitconfig exists
 if [ -e "${dotgitconfig}" ]
 then
@@ -116,5 +143,6 @@ echo `ls -l ${dotbash_profile}`
 
 echo "Cloning vim plugin manager vundle"
 git clone https://github.com/gmarik/vundle.git ${dotvim}/bundle/vundle
-echo "Vim vundle clined"
+echo "Vim vundle cloned"
 echo `ls -l ${dotvim}/bundle`
+

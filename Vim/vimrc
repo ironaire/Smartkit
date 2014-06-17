@@ -95,7 +95,7 @@ let g:indentLine_color_term = 239
 "let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '|'
 " DelimitMate setting
-let delimitMate_expand_cr = 1
+" let delimitMate_expand_cr = 1
 
 " set encoding, fileencoding, fileencodings
 set encoding=utf-8

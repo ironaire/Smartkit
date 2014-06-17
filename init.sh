@@ -116,6 +116,6 @@ echo `ls -l ${dotbash_profile}`
 
 echo "Cloning vim plugin manager vundle"
 git clone https://github.com/gmarik/vundle.git ${dotvim}/bundle/vundle
-echo "Vim vundle clined"
+echo "Vim vundle cloned"
 echo `ls -l ${dotvim}/bundle`
 

@@ -5,4 +5,7 @@
 [sendmail]
 [push]
     default = current
-
+[gui]
+    encoding = utf=8
+[i18n]
+    logoutputencoding = utf-8

@@ -144,7 +144,7 @@ let g:UltiSnipsJumpBackwardTrigger="OO"
 
 " Tagbar settings
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=31
 
 "" Tagbar groovy support

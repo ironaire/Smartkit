@@ -25,3 +25,5 @@ Rows=30
 Transparency=low
 CursorType=block
 FontHeight=12
+Locale=C
+Charset=UTF-8

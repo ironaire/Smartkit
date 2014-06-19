@@ -80,20 +80,32 @@
   create webapps_anotherhost folder to host the app, like ROOT, etc.
 ** Change tomcat running port
 - edit conf/server.xml, locate <Connector> node, change attribute port="80" 
+** Change tomcat to encode as utf8 to solve mysql searching in Chinese
+- for Get method
+Add these 2 attributes to the Connector of server.xml file:
+useBodyEncodingForURI="true" URIEncoding="utf-8
+- for Post method
+Add this filter to web.xml filter chain:
+<param-name>encoding</param-name>
+<param-value>utf-8</param-value>
 * JBoss
 * Mysql
 ** Set character set to be utf8 for mysql 5.5+
 *** Check current character set of mysql
 - show variables like 'character_set_%'
-*** Edit /etc/mysql/my.cnf (Windows should be my.ini) to set character set [2/2]
+*** Edit /etc/mysql/my.cnf (Windows should be my.ini) to set character set [3/3]
 - [X] Set character set of mysql client
       [client]
       default-character-set=utf8
-- [X] Set character set of mysqld
+- [X] Set character set and optional init connect of mysqld
       [server]
       default-storage-engine=INNODB
       character-set-server=utf8
       collation-server=utf8_unicode_ci
+      init-connect='SET NAMES utf8'
+- [X] Set character set of mysql
+     [mysql]
+     default-character-set=utf8
 *** Change database character set to be utf8
 - ALTER DATABASE <name> CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 *** Change table character set to be utf8

@@ -13,7 +13,7 @@ JAVA6_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
 export JAVA_HOME=${JAVA7_HOME}
 
-export PATH=/usr/local/git/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
+export PATH=/usr/local/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
 
 # Triton ssh aliases to dev machines on RDMZ
 alias sshTritonUI='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton.bmi.osumc.edu'

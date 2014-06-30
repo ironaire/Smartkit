@@ -16,12 +16,12 @@ export JAVA_HOME=${JAVA7_HOME}
 export PATH=/usr/local/git/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
 
 # Triton ssh aliases to dev machines on RDMZ
-alias sshTritonUI='ssh -2 -X cagrid@triton.bmi.osumc.edu'
-alias sshTritonDS='ssh -2 -X cagrid@triton-directory.bmi.osumc.edu'
-alias sshTritonPS='ssh -2 -X cagrid@triton-protocol.bmi.osumc.edu'
-alias sshTritonPaS='ssh -2 -X cagrid@triton-participant.bmi.osumc.edu'
-alias sshTritonTS='ssh -2 -X cagrid@triton-tissue.bmi.osumc.edu'
-alias sshCSM='ssh -2 -X cagrid@csm.bmi.osumc.edu'
-alias sshRIEQP='ssh -2 -X wan119@hcl-qp-dev.bmi.osumc.edu'
-alias sshCIE='ssh -2 -X wan119@cielho.bmi.osumc.edu'
+alias sshTritonUI='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton.bmi.osumc.edu'
+alias sshTritonDS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-directory.bmi.osumc.edu'
+alias sshTritonPS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-protocol.bmi.osumc.edu'
+alias sshTritonPaS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-participant.bmi.osumc.edu'
+alias sshTritonTS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-tissue.bmi.osumc.edu'
+alias sshCSM='ssh -i ~/.ssh/wan119 -2 -X cagrid@csm.bmi.osumc.edu'
+alias sshRIEQP='ssh -i ~/.ssh/wan119 -2 -X wan119@hcl-qp-dev.bmi.osumc.edu'
+alias sshCIE='ssh -i ~/.ssh/wan119 -2 -X wan119@cielho.bmi.osumc.edu'
 

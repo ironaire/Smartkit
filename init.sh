@@ -19,6 +19,7 @@ bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 minttyrc="${bash}/minttyrc-solarized-dark"
+screenrc="${bash}/screenrc"
 dir_colors="${bash}/dircolors.256dark"
 dotgitconfig="$HOME/.gitconfig"
 dotctags="$HOME/.ctags"
@@ -30,6 +31,18 @@ dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
 dotminttyrc="$HOME/.minttyrc"
 dotdir_colors="$HOME/.dir_colors"
+dotscreenrc="${HOME}/.screenrc"
+
+# test if .screenrc exists
+if [ -e "${dotscreenrc}" ]
+then
+    echo "${dotscreenrc} exists, remove it"
+    rm -rf ${dotscreenrc} || { echo "Removing ${dotscreenrc} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotscreenrc}"
+ln -f -s ${screenrc} ${dotscreenrc} || { echo "Creating symbolic ${dotscreenrc} failed"; exit 1; }
+echo "${dotscreenrc} created"
+echo `ls -l ${dotscreenrc}`
 
 # test if .dir_colors exists
 if [ -e "${dotdir_colors}" ]

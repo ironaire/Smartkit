@@ -40,5 +40,5 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
 alias vi=vim
-alias t='~/Smartkit/Bash/newScreen'
+alias ms='~/Smartkit/Bash/multi_screen'
 

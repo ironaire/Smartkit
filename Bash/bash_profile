@@ -25,5 +25,6 @@ alias sshTritonPaS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-participant.bmi.osu
 alias sshTritonTS='ssh -i ~/.ssh/wan119 -2 -X cagrid@triton-tissue.bmi.osumc.edu'
 alias sshCSM='ssh -i ~/.ssh/wan119 -2 -X cagrid@csm.bmi.osumc.edu'
 alias sshRIEQP='ssh -i ~/.ssh/wan119 -2 -X wan119@hcl-qp-dev.bmi.osumc.edu'
-alias sshCIE='ssh -i ~/.ssh/wan119 -2 -X wan119@cielho.bmi.osumc.edu'
+alias sshCIE='ssh -i ~/.ssh/wan119 -2 -X wan119@cielo.bmi.osumc.edu'
+alias sshCIEDEV='ssh -i ~/.ssh/wan119 -2 -X wan119@cielo-dev.bmi.osumc.edu'
 

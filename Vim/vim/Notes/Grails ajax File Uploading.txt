@@ -1,0 +1,71 @@
+Grails ajax File Uploading
+
+                                    * * *
+Grails supports file uploading using Spring MultipartHttpServletRequest wrapper,
+the form and MIME Type need to be multipart to accomplish this.
+• Controller
+   ◦ File uploading action
+   class FileController {
+      def upload() {
+         if (!(request instanceof MultipartHttpServletRequest)) {
+            // error handling
+            return
+         }
+         List file = request.getFiles(‘file’)
+         def fileName = ‘uploaded.zip’
+         ZipOutputStream zipFile = new ZipOutputStream(new
+            FileOutputStream(fileName))
+         file.each { f → 
+            zipFile.putNextEntry(f.originalFilename)
+            def buffer = new byte[1024]
+            def length = 0 
+            InputStream is = f.getInputStream()
+            while ((length = is.read(buffer)) > 0) {
+               zipFile.write(buffer, 0, length)
+            }
+            zipFile.closeEntry()
+            is.close()
+         }
+         zipFile.close()
+         render(contentType: ‘text/json’) {
+            [success: true]
+         }
+      }
+   }
+• GSP
+   ◦ for of upload.gsp
+   <form enctype='multipart/form-data' name='fileForm' id='fileForm'
+      method='POST'>
+      <input name='fileName' />
+      <input type='file' name='file' multiple />
+   </form>
+• Javascript
+   ◦ submit form
+   $('fileForm').submit(function(e) {
+      var formData = new FormData(this);
+      e.preventDefault();
+      e.stopPropagation();
+      $.ajax({
+         type: 'POST',
+         url: '/file/upload',
+         // set mimeType
+         mimeType: 'multipart/form-data',
+         // prevent jquery from convert content
+         // into query string
+         contentType: false,
+         // prevent jquery from processing files
+         // into string
+         processData: false,
+         cache: false,
+         data: formData,
+         error: function() {
+            alert('There was an error.');
+         },
+         success: function(data) {
+            if (data.success) {
+               // do sth
+            }
+         }
+      });
+   });
+

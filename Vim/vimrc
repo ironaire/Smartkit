@@ -119,7 +119,7 @@ if has('gui_running')
     set guifont=Monaco:h15
     set columns=150 lines=45
     set fuoptions=maxvert,maxhorz
-    set transparency=20
+    set transparency=15
 endif
 
 " NERDTree setting

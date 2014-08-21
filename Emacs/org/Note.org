@@ -83,7 +83,7 @@
 ** Change tomcat to encode as utf8 to solve mysql searching in Chinese
 - for Get method
 Add these 2 attributes to the Connector of server.xml file:
-useBodyEncodingForURI="true" URIEncoding="utf-8
+useBodyEncodingForURI="true" URIEncoding="utf-8“
 - for Post method
 Add this filter to web.xml filter chain:
 <param-name>encoding</param-name>

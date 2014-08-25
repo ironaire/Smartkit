@@ -119,10 +119,12 @@ if has('gui_running')
     set guifont=Monaco:h15
     set columns=150 lines=45
     set fuoptions=maxvert,maxhorz
+    set transparency=15
 endif
 
 " NERDTree setting
-nnoremap <silent> <Leader>n :NERDTreeToggle<CR>
+" nnoremap <silent> <Leader>n :NERDTreeToggle<CR> " use default \n to toggle
+nnoremap <c-t> :NERDTreeToggle<CR> " use ctrl-t to toggle"
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
@@ -143,8 +145,9 @@ let g:UltiSnipsJumpForwardTrigger="II"
 let g:UltiSnipsJumpBackwardTrigger="OO"
 
 " Tagbar settings
-nnoremap <silent> <Leader>t :TagbarToggle<CR>
-let g:tagbar_ctags_bin='/usr/bin/ctags'
+" nnoremap <silent> <Leader>t :TagbarToggle<CR> " use default \t to toggle
+nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle"
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=31
 
 "" Tagbar groovy support

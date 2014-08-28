@@ -1,0 +1,15 @@
+JQuery Dialog with Chosen Select Overflow
+
+                                    * * *
+When using jquery Chosen plugin inside jqueryui Dialog, the chosen options will
+be cut off if they are overflowing the dialog, to solve this, add this to the
+css file to allow dialog show overflow content:
+
+.ui-dialog .ui-dialog-content {
+   overflow: visible !important;
+}
+
+.ui-dialog {
+   overflow: inherit !important;
+}
+

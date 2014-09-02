@@ -41,3 +41,5 @@ alias svnkdiff='svn diff --diff-cmd kdiff3'
 alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
 alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
 
+alias erase='rm -rf ~/Library/Containers/com.tencent.qq/Data/Library/Application\ Support/QQ/Defaults/accounts.xml'
+

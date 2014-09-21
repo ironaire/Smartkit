@@ -38,8 +38,5 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs -nw'
-alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-
 alias erase='rm -rf ~/Library/Containers/com.tencent.qq/Data/Library/Application\ Support/QQ/Defaults/accounts.xml'
 

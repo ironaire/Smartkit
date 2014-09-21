@@ -2,7 +2,7 @@
 # init.sh
 # This file will init my bash env setting for my smart kit
 # including .bashrc, .bash_aliases, .bash_profile
-# and vim config, emacs config, .gitconfig, ctags regex patterns
+# and vim config, .gitconfig, ctags regex patterns
 # run this file using sh init.sh or ./init.sh if runnable
 
 workDir="$PWD"
@@ -13,7 +13,6 @@ ctags="${misc}/ctags"
 vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
-emacs="${workDir}/Emacs"
 bash="${workDir}/Bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
@@ -25,7 +24,6 @@ dotgitconfig="$HOME/.gitconfig"
 dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
-dotemacsdotd="$HOME/.emacs.d"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
@@ -109,17 +107,6 @@ echo "Create symbolic for ${dotvimrc}"
 ln -f -s ${vimrc} ${dotvimrc} || { echo "Creating symbolic ${vimrc} failed"; exit 1; }
 echo "${dotvimrc} created"
 echo `ls -l ${dotvimrc}`
-
-# create symbolic for emacs
-if [ -e ${dotemacsdotd} ]
-then
-    echo "${dotemacsdotd} exists, remove it"
-    rm -rf ${dotemacsdotd} || { echo "Removing ${dotemacsdotd} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotemacsdotd}"
-ln -f -s ${emacs} ${dotemacsdotd} || { echo "Creating symbolic ${dotemacsdotd} failed"; exit 1; }
-echo "${dotemacsdotd} created"
-echo `ls -l ${dotemacsdotd}`
 
 # create symbolic for .bashrc
 if [ -e ${dotbashrc} ]

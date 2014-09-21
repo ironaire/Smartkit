@@ -1,7 +1,0 @@
-tar xzvf ctags-5.8.tar.gz
-cd ctags-5.8
-./configure
-make
-sudo make install
-
-then ctags will be install to /usr/local/bin/ctags

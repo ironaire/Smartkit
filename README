@@ -22,10 +22,6 @@ in the $HOME folder for these files.
     file is sourced by .bash_profile
   + you might want to create a soft link $HOME/.bash_project pointing
     to this file
-* Emacs
-Contains everyting emacs needs, init file, addons, org related,
-etc. There should be a soft link $HOME/.emacs.d pointing to the folder
-- ln -s <path>/workbench-repo/Emacs $HOME/.emacs.d
 * Vim
 Contains vim configuration file and settings.
 - vimrc: vim init file, there should be a soft link $HOME/.vimrc

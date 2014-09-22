@@ -11,18 +11,18 @@ DI="\[\033[0;34m\]" # Blue for working directory
 PI="\[\033[0;33m\]" # Brown for dollar symbol and separator
 II="\[\033[0m\]" # Reset to prompt color
 
-export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$II "
+PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$II "
 
 # Non-color prompt
 
-#export PS1='\u@\h:\w$ '
+#PS1='\u@\h:\w$ '
 
 # Make some possibly destructive commands more interactive.
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-export LS_OPTIONS=' -G'
+LS_OPTIONS=' -G'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -a -lF $LS_OPTIONS'
 alias la='ls -aF $LS_OPTIONS'

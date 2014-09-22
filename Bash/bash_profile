@@ -8,12 +8,16 @@ alias sshTritonUI='ssh -2 -X cagrid@triton.bmi.osumc.edu'
 
 WORKSHOP=~/Workshop
 
-export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.52
 ANT_HOME=${WORKSHOP}/apache-ant-1.9.3
 MVN_HOME=${WORKSHOP}/apache-maven-3.2.1
 GRAILS_HOME=${WORKSHOP}/grails-2.3.7
+
 JAVA6_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
 export JAVA_HOME=${JAVA7_HOME}
 
-export PATH=/usr/local/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
+export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.52
+
+export PATH=/usr/local/bin:${ANT_HOME}/bin:$PATH
+export PATH=${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
+

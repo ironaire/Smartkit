@@ -15,7 +15,7 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # set xterm to be 256 colors instead of default ansi 8 colors
-# TERM=xterm-256color
+#export TERM=xterm-256color
 
 # Add bash aliases.
 if [ -f ~/.bash_aliases ]; then

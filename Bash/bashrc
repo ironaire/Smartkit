@@ -1,6 +1,6 @@
 
 # Avoid successive duplicates in the bash command history
-export HISTCONTROL=ignoredups
+HISTCONTROL=ignoredups
 
 : '
  Append commands to the bash command history file (~/.bash_history)
@@ -15,12 +15,12 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # set xterm to be 256 colors instead of default ansi 8 colors
-# export TERM=xterm-256color
+# TERM=xterm-256color
 
 # Add bash aliases.
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
-export EDITOR=vim
+EDITOR=vim
 

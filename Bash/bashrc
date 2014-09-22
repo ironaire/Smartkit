@@ -1,6 +1,6 @@
 
 # Avoid successive duplicates in the bash command history
-HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups
 
 : '
  Append commands to the bash command history file (~/.bash_history)
@@ -22,5 +22,5 @@ if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
 
-EDITOR=vim
+export EDITOR=vim
 

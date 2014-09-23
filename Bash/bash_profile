@@ -20,6 +20,8 @@ export PATH=/usr/local/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:$PATH
 export PATH=${GRAILS_HOME}/bin:${GRADLE_HOME}/bin:$PATH
 
 # Triton ssh aliases to dev machines on RDMZ
-alias sshCIE='ssh -i ~/.ssh/wan119 -2 -X wan119@cielo.bmi.osumc.edu'
-alias sshCIEDEV='ssh -i ~/.ssh/wan119 -2 -X wan119@cielo-dev.bmi.osumc.edu'
+alias sshCIE='ssh -i ~/.ssh/id_rsa-2 -X wan119@cielo.bmi.osumc.edu'
+alias sshCIEDEV='ssh -i ~/.ssh/id_rsa -2 -X wan119@cielo-dev.bmi.osumc.edu'
+alias sshJenkins='ssh -i ~/.ssh/id_rsa -2 -X wan119@dashboard.bmi.osumc.edu'
+alias sshNexus='ssh -i ~/.ssh/id_rsa -2 -X nexus@repo.bmi.osumc.edu'
 

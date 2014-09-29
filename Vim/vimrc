@@ -8,6 +8,12 @@ set nocompatible
 filetype off	"required
 filetype plugin indent on	"required
 
+" Disable beep and flash whth an autocmd
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+    autocmd GUIEnter * set visualbell t_vb=
+endif
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 

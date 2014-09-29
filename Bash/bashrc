@@ -12,7 +12,16 @@ shopt -s histappend
  Append commands to the history every time a prompt is shown,
  instaead of after closing the session.
 '
-PROMPT_COMMAND='history -a'
+PROMPT_COMMAND="history -a ; $PROMPT_COMMAND"
+
+# set tab title to display the working dir
+function set_tab_title {
+    echo -n -e "\033]0;${PWD##*/}\007"
+}
+
+# add set tab title to PROMPT_COMMAND
+PROMPT_COMMAND="set_tab_title ; $PROMPT_COMMAND"
+
 
 # set xterm to be 256 colors instead of default ansi 8 colors
 #export TERM=xterm-256color

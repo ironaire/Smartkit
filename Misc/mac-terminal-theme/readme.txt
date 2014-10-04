@@ -1,6 +1,7 @@
-There 2 themes customized on my own:
-Solarized Dark
-Solarized Light
+There 3 themes customized on my own:
+SolarizedDark
+SolarizedLight
+ContrastBlack
 
 All others are originally downloaded from internet.
 

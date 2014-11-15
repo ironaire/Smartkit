@@ -5,10 +5,10 @@ fi
 
 WORKSHOP=~/Workshop
 
-ANT_HOME=${WORKSHOP}/apache-ant-1.8.4
-MVN_HOME=${WORKSHOP}/apache-maven-3.1.1
+ANT_HOME=${WORKSHOP}/apache-ant-1.9.4
+MVN_HOME=${WORKSHOP}/apache-maven-3.2.3
 GRADLE_HOME=${WORKSHOP}/gradle-2.0
-GRAILS_HOME=${WORKSHOP}/grails-2.3.7
+GRAILS_HOME=${WORKSHOP}/grails-2.2.2
 
 JAVA6_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
@@ -20,7 +20,7 @@ export PATH=/usr/local/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:$PATH
 export PATH=${GRAILS_HOME}/bin:${GRADLE_HOME}/bin:$PATH
 
 # Triton ssh aliases to dev machines on RDMZ
-alias sshCIE='ssh -i ~/.ssh/id_rsa-2 -X wan119@cielo.bmi.osumc.edu'
+alias sshCIE='ssh -i ~/.ssh/id_rsa -2 -X wan119@cielo.bmi.osumc.edu'
 alias sshCIEDEV='ssh -i ~/.ssh/id_rsa -2 -X wan119@cielo-dev.bmi.osumc.edu'
 alias sshJenkins='ssh -i ~/.ssh/id_rsa -2 -X wan119@dashboard.bmi.osumc.edu'
 alias sshNexus='ssh -i ~/.ssh/id_rsa -2 -X nexus@repo.bmi.osumc.edu'

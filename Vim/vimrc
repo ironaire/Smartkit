@@ -43,7 +43,7 @@ Bundle 'xolox/vim-easytags'
 set shiftwidth=4
 
 " force columns to be 80 autowrap
-set textwidth=80
+set textwidth=100
 
 " I like 4 stops
 " softtabstop will make backspace to remove already input tab
@@ -119,8 +119,8 @@ set background=dark " light for light version
 if has('gui_running')
     colorscheme solarized
     set background=dark " dark or light
-    set guifont=Monaco:h15
-    set columns=150 lines=45
+    set guifont=Monaco:h14
+    set columns=170 lines=40
     set fuoptions=maxvert,maxhorz
     set transparency=15
 endif

@@ -42,8 +42,8 @@ Bundle 'xolox/vim-easytags'
 " I like 4 spaces for indenting
 set shiftwidth=4
 
-" force columns to be 80 autowrap
-set textwidth=100
+" force columns to be 120 autowrap
+set textwidth=120
 
 " I like 4 stops
 " softtabstop will make backspace to remove already input tab
@@ -120,7 +120,7 @@ if has('gui_running')
     colorscheme solarized
     set background=dark " dark or light
     set guifont=Monaco:h14
-    set columns=170 lines=40
+    set columns=160 lines=40
     set fuoptions=maxvert,maxhorz
     set transparency=15
 endif
@@ -131,7 +131,7 @@ nnoremap <silent> <Leader>n :NERDTreeToggle<CR> " use default \n to toggle
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
-let g:NERDTreeWinSize = 35
+let g:NERDTreeWinSize = 30
 
 " CtrlP setting
 let g:ctrlp_map = '<c-p>'
@@ -145,7 +145,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 nnoremap <silent> <Leader>t :TagbarToggle<CR> " use default \t to toggle
 " nnoremap <c-t> :TagbarToggle<CR> " use ctrl-t to toggle
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=31
+let g:tagbar_width=30
 
 "" Tagbar groovy support
 let g:tagbar_type_groovy = {

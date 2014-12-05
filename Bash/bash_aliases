@@ -10,8 +10,9 @@ HI="\[\033[0;32m\]" # Green for hostname
 DI="\[\033[0;34m\]" # Blue for working directory
 PI="\[\033[0;33m\]" # Brown for dollar symbol and separator
 II="\[\033[0m\]" # Reset to prompt color
+GI="\[\033[1;32m\]" # Bold Green for for >
 
-export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$II "
+export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$GI>$II "
 
 # Non-color prompt
 
@@ -22,7 +23,7 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-export LS_OPTIONS=' -G'
+export LS_OPTIONS=' --color=auto'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -a -lF $LS_OPTIONS'
 alias la='ls -aF $LS_OPTIONS'
@@ -37,4 +38,6 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'
+
+alias erase='rm -rf ~/Library/Containers/com.tencent.qq/Data/Library/Application\ Support/QQ/Defaults/accounts.xml'
 

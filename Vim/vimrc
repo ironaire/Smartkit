@@ -131,8 +131,8 @@ if has('gui_running')
 endif
 
 " NERDTree setting
-nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e standing for project explorer to toggle
-" nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle
+" nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e standing for project explorer to toggle
+nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
@@ -147,8 +147,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " Tagbar settings
-nnoremap <silent> <Leader>o :TagbarToggle<CR> " use \o standing for file outline to toggle
-" nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
+" nnoremap <silent> <Leader>o :TagbarToggle<CR> " use \o standing for file outline to toggle
+nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=30
 

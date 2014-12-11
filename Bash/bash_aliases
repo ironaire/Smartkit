@@ -10,9 +10,11 @@ HI="\[\033[0;32m\]" # Green for hostname
 DI="\[\033[0;34m\]" # Blue for working directory
 PI="\[\033[0;33m\]" # Brown for dollar symbol and separator
 II="\[\033[0m\]" # Reset to prompt color
+BBI="\[\033[1;33m\]" # Bold Brown for >
+BRI="\[\033[1;31m\]" # Bold Red for >
 GI="\[\033[1;32m\]" # Bold Green for for >
 
-export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$GI>$II "
+export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$BRI>$BBI>$GI>$II "
 
 # Non-color prompt
 

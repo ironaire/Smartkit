@@ -119,11 +119,11 @@ set background=dark " light for light version
 if has('gui_running')
     colorscheme solarized
     set background=dark " dark or light
-    " these lines will set theme to be light between 6am and 5pm
-    " let hour = strftime("%H")
-    " if hour > 6 && hour < 18
-    "     set background=light
-    " endif
+    " set theme to be light between 6am and 5pm
+    let hour = strftime("%H")
+    if hour > 6 && hour < 18
+        set background=light
+    endif
     set guifont=Monaco:h14
     set columns=160 lines=40
     set fuoptions=maxvert,maxhorz

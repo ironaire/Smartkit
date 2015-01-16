@@ -141,7 +141,7 @@ let g:NERDTreeWinSize = 30
 " CtrlP setting
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'rw'
+let g:ctrlp_working_path_mode = 'c'
 let g:ctrlp_by_filename = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'

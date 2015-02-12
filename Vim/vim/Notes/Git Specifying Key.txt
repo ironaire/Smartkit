@@ -9,6 +9,7 @@ git does not have -i option
       User git
       IdentityFile ~/.ssh/<key> # eg. ironaire
       IdentitiesOnly yes
+   ◦ If git fails still, run ssh-add ~/.ssh/<key> to add the identity to local ssh.
    ◦ Optionally run ‘ssh <RemoteServer>’ to test the connection
    ◦ Add remote server to git project
      git remote add origin <RemoteServer>:path/to/repository.git

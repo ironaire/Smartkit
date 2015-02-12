@@ -8,6 +8,7 @@ git does not have -i option
       HostName <remote-server-url> # eg. gitlab.com
       User git
       IdentityFile ~/.ssh/<key> # eg. ironaire
+      IdentitiesOnly yes
    ◦ Optionally run ‘ssh <RemoteServer>’ to test the connection
    ◦ Add remote server to git project
      git remote add origin <RemoteServer>:path/to/repository.git

@@ -427,7 +427,9 @@
       </value>
     </option>
     <option name="CONSOLE_NORMAL_OUTPUT">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="586e75" />
+      </value>
     </option>
     <option name="CONSOLE_RED_BRIGHT_OUTPUT">
       <value>
@@ -441,7 +443,9 @@
       </value>
     </option>
     <option name="CONSOLE_SYSTEM_OUTPUT">
-      <value />
+      <value>
+        <option name="FOREGROUND" value="586e75" />
+      </value>
     </option>
     <option name="CONSOLE_USER_INPUT">
       <value>
@@ -888,6 +892,92 @@
     <option name="DUPLICATE_FROM_SERVER">
       <value />
     </option>
+    <option name="ECMAL4.AL4.LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="657b83" />
+        <option name="EFFECT_TYPE" value="-1" />
+      </value>
+    </option>
+    <option name="ECMAL4.ATTRIBUTE">
+      <value>
+        <option name="FOREGROUND" value="d33682" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.CLASS">
+      <value>
+        <option name="FOREGROUND" value="b58900" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.DOC_MARKUP">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.DOC_TAG">
+      <value>
+        <option name="FOREGROUND" value="dc322f" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ECMAL4.GLOBAL_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="859900" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.GLOBAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="859900" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.INSTANCE_MEMBER_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="657b83" />
+        <option name="EFFECT_TYPE" value="-1" />
+      </value>
+    </option>
+    <option name="ECMAL4.INSTANCE_MEMBER_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="859900" />
+        <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.NUMBER">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="657b83" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="657b83" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="ECMAL4.SEMICOLON">
+      <value>
+        <option name="FOREGROUND" value="657b83" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="ECMAL4.STATIC_MEMBER_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="d33682" />
+        <option name="EFFECT_TYPE" value="0" />
+      </value>
+    </option>
     <option name="EL.BOUNDS">
       <value>
         <option name="FOREGROUND" value="cb4b16" />
@@ -936,7 +1026,7 @@
     <option name="EXECUTIONPOINT_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="fdf6e3" />
-        <option name="BACKGROUND" value="268bd2" />
+        <option name="BACKGROUND" value="1f70a6" />
       </value>
     </option>
     <option name="FOLDED_TEXT_ATTRIBUTES">
@@ -1401,6 +1491,12 @@
         <option name="BACKGROUND" value="eee8d5" />
       </value>
     </option>
+    <option name="JS.DOC_TAG">
+      <value>
+        <option name="FOREGROUND" value="dc322f" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="JS.GLOBAL_FUNCTION">
       <value>
         <option name="FOREGROUND" value="b58900" />
@@ -1413,13 +1509,13 @@
     </option>
     <option name="JS.INSTANCE_MEMBER_FUNCTION">
       <value>
-        <option name="FOREGROUND" value="b58900" />
+        <option name="FOREGROUND" value="859900" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="JS.INSTANCE_MEMBER_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="b58900" />
+        <option name="FOREGROUND" value="586e75" />
       </value>
     </option>
     <option name="JS.INVALID_STRING_ESCAPE">
@@ -1442,16 +1538,21 @@
     </option>
     <option name="JS.LOCAL_VARIABLE">
       <value>
-        <option name="FOREGROUND" value="b58900" />
+        <option name="FOREGROUND" value="586e75" />
         <option name="EFFECT_TYPE" value="-1" />
       </value>
     </option>
     <option name="JS.NUMBER">
       <value />
     </option>
+    <option name="JS.OPERATION_SIGN">
+      <value>
+        <option name="FOREGROUND" value="586e75" />
+      </value>
+    </option>
     <option name="JS.PARAMETER">
       <value>
-        <option name="FOREGROUND" value="b58900" />
+        <option name="FOREGROUND" value="586e75" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -1463,7 +1564,7 @@
     </option>
     <option name="JS.SEMICOLON">
       <value>
-        <option name="FOREGROUND" value="b58900" />
+        <option name="FOREGROUND" value="586e75" />
       </value>
     </option>
     <option name="JS.STATIC_MEMBER_VARIABLE">
@@ -2460,9 +2561,24 @@
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
+    <option name="REGEXP.BRACES">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
+      </value>
+    </option>
+    <option name="REGEXP.BRACKETS">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
+      </value>
+    </option>
     <option name="REGEXP.CHAR_CLASS">
       <value>
         <option name="FOREGROUND" value="6c71c4" />
+      </value>
+    </option>
+    <option name="REGEXP.COMMA">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
       </value>
     </option>
     <option name="REGEXP.COMMENT">
@@ -2482,6 +2598,11 @@
       </value>
     </option>
     <option name="REGEXP.META">
+      <value>
+        <option name="FOREGROUND" value="2aa198" />
+      </value>
+    </option>
+    <option name="REGEXP.PARENTHS">
       <value>
         <option name="FOREGROUND" value="2aa198" />
       </value>
@@ -2825,6 +2946,41 @@
         <option name="FOREGROUND" value="6c71c4" />
         <option name="FONT_TYPE" value="1" />
         <option name="EFFECT_TYPE" value="-1" />
+      </value>
+    </option>
+    <option name="SPY-JS.EXCEPTION">
+      <value>
+        <option name="BACKGROUND" value="ffcccc" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="SPY-JS.FUNCTION_SCOPE">
+      <value>
+        <option name="BACKGROUND" value="ffffd7" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="SPY-JS.PATH_LEVEL_ONE">
+      <value>
+        <option name="BACKGROUND" value="e2ffe2" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="SPY-JS.PATH_LEVEL_TWO">
+      <value>
+        <option name="EFFECT_COLOR" value="0" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="SPY-JS.PROGRAM_SCOPE">
+      <value>
+        <option name="BACKGROUND" value="ffffd7" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="SPY-JS.VALUE_HINT">
+      <value>
+        <option name="EFFECT_COLOR" value="a9a9a9" />
       </value>
     </option>
     <option name="SQL_BAD_CHARACTER">

@@ -40,6 +40,11 @@ for which the syntax highlighting has been adapted to the Solarized color scheme
 		<th>Supported</th>
 		<th>Note</th>
 	</tr>
+  <tr>
+    <td>ActionScript</td>
+    <td align="center"><b>Yes</b></td>
+    <td></td>
+  </tr>
 	<tr>
 		<td><a href="http://developer.android.com/tools/help/logcat.html">Android
 Logcat</a></td>
@@ -322,6 +327,7 @@ color themes.
     * `~/Library/Preferences/IntelliJIdea13/colors` (IntelliJ IDEA 13 Ultimate Edition)
     * `~/Library/Preferences/IdeaIC13/colors` (IntelliJ IDEA 13 Community Edition),
     * `~/Library/Preferences/WebIDE70/colors` (PHPStorm 7.0),
+    * `~/Library/Preferences/WebIDE80/colors` (PHPStorm 8.0),
     * `~/Library/Preferences/WebStorm8/colors` (Webstorm 8.0).
 
     *Windows*

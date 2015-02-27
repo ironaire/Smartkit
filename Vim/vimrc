@@ -43,7 +43,7 @@ Bundle 'xolox/vim-easytags'
 set shiftwidth=4
 
 " force columns to be 120 autowrap
-set textwidth=120
+set textwidth=100
 
 " I like 4 stops
 " softtabstop will make backspace to remove already input tab
@@ -136,7 +136,7 @@ nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
-let g:NERDTreeWinSize = 30
+let g:NERDTreeWinSize = 32
 
 " CtrlP setting
 let g:ctrlp_map = '<c-p>'
@@ -150,7 +150,7 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " nnoremap <silent> <Leader>o :TagbarToggle<CR> " use \o standing for file outline to toggle
 nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=30
+let g:tagbar_width=32
 
 "" Tagbar groovy support
 let g:tagbar_type_groovy = {

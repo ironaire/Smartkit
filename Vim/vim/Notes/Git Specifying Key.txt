@@ -3,7 +3,7 @@ Git Specifying Key
 • SSH used -i /path/to/key to ssh to a remote server using specific key file,
 git does not have -i option
 • In Git there steps need to be done to accomplish this:
-   ◦ Add this to ~.ssh/config file (create if not existing)
+   ◦ Add this to ~/.ssh/config file (create if not existing)
      Host <RemoteServer> # eg. GitLab
       HostName <remote-server-url> # eg. gitlab.com
       User git

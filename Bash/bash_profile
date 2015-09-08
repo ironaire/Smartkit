@@ -15,7 +15,7 @@ GRADLE_HOME=${WORKSHOP}/gradle-2.0
 GRAILS_HOME=${GRAILS24_HOME}
 
 JAVA6_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_21.jdk/Contents/Home
+JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
 export JAVA_HOME=${JAVA7_HOME}
 
 export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.57

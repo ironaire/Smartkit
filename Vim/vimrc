@@ -43,7 +43,7 @@ Bundle 'xolox/vim-easytags'
 set shiftwidth=4
 
 " force columns to be 120 autowrap
-set textwidth=100
+set textwidth=120
 
 " I like 4 stops
 " softtabstop will make backspace to remove already input tab

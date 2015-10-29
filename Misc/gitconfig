@@ -2,6 +2,12 @@
 	name = Shunchao Wang
 	email = wang.2799@osu.edu
 [core]
+    packedGitLimit = 512M
+    packedGitWindowSize = 512M
+[pack]
+    deltaCacheSize = 2047M
+    packSizeLimit = 2047M
+    windowMemory = 2047M
 [sendmail]
 [push]
     default = current
@@ -9,3 +15,10 @@
     encoding = utf=8
 [i18n]
     logoutputencoding = utf-8
+[core]
+	compression = 0
+[http]
+	postBuffer = 524288000
+	sslVerify = true
+[color]
+	ui = auto

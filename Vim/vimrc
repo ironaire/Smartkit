@@ -28,13 +28,7 @@ Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-notes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
-Bundle 'Raimondi/delimitMate'
-Bundle 'Yggdroot/indentLine'
-Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'xolox/vim-easytags'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -93,13 +87,6 @@ set notildeop
 " Turn on syntax
 syntax on
 
-" Vertical line indentation
-let g:indentLine_color_term = 239
-"let g:indentLine_color_gui = '#09AA08'
-let g:indentLine_char = '|'
-" DelimitMate setting
-let delimitMate_expand_cr = 2
-
 " set encoding, fileencoding, fileencodings
 set encoding=utf-8
 " set langmenu=zh_CN.UTF-8
@@ -145,28 +132,4 @@ let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_by_filename = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-" Tagbar settings
-" nnoremap <silent> <Leader>o :TagbarToggle<CR> " use \o standing for file outline to toggle
-nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=32
-
-"" Tagbar groovy support
-let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
-    \ 'kinds' : [
-    \ 'p:package',
-    \ 'c:class',
-    \ 'i:interface',
-    \ 'f:function',
-    \ 'v:variables'
-    \ ]
-\ }
-
-" vim-easytags settings
-" Easytags (enables CTL-] and CTRL-T) by autotagging
-let g:easytags_cmd = '/usr/local/bin/ctags'
-set tags=./.git/tags;~/.vimtags
-let g:easytags_dynamic_files = 1
 

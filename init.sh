@@ -9,7 +9,6 @@ workDir="$PWD"
 echo $workDir
 misc="$workDir/Misc"
 gitconfig="${misc}/gitconfig"
-ctags="${misc}/ctags"
 vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -18,7 +17,6 @@ bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 dotgitconfig="$HOME/.gitconfig"
-dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
@@ -34,17 +32,6 @@ echo "Create symbolic for ${dotgitconfig}"
 ln -f -s ${gitconfig} ${dotgitconfig} || { echo "Creating symbolic ${dotgitconfig} failed"; exit 1; }
 echo "${dotgitconfig} created"
 echo `ls -l ${dotgitconfig}`
-
-# test if .ctags exists
-if [ -e "${dotctags}" ]
-then
-    echo "${dotctags} exists, remove it"
-    rm -rf ${dotctags} || { echo "Removing ${dotctags} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotctags}"
-ln -f -s ${ctags} ${dotctags} || { echo "Creating symbolic ${dotctags} failed"; exit 1; }
-echo "${dotctags} created"
-echo `ls -l ${dotctags}`
 
 # test if .vim exists
 if [ -e "${dotvim}" ]

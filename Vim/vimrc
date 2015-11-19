@@ -34,7 +34,6 @@ Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'majutsushi/tagbar'
-Bundle 'xolox/vim-easytags'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -163,10 +162,4 @@ let g:tagbar_type_groovy = {
     \ 'v:variables'
     \ ]
 \ }
-
-" vim-easytags settings
-" Easytags (enables CTL-] and CTRL-T) by autotagging
-let g:easytags_cmd = '/usr/local/bin/ctags'
-set tags=./.git/tags;~/.vimtags
-let g:easytags_dynamic_files = 1
 

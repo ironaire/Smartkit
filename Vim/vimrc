@@ -111,10 +111,10 @@ if has('gui_running')
     if hour > 6 && hour < 18
         set background=light
     endif
-    set guifont=Monaco:h14
+    set guifont=Monaco:h13
     set columns=160 lines=40
     set fuoptions=maxvert,maxhorz
-    set transparency=15
+    set transparency=20
 endif
 
 " NERDTree setting

@@ -112,7 +112,7 @@ if has('gui_running')
         set background=light
     endif
     set guifont=Monaco:h13
-    set columns=160 lines=40
+    set columns=120 lines=40
     set fuoptions=maxvert,maxhorz
     set transparency=20
 endif

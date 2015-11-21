@@ -31,6 +31,9 @@ AI1=$COLOR_LIGHT_RED # Light Red for 1st >
 AI2=$COLOR_YELLOW # Yellow for 2nd >
 AI3=$COLOR_LIGHT_GREEN # Light Green for 3rd >
 
+HEAVY_RIGHT="\342\235\257"
+PROMPT="$AI1${HEAVY_RIGHT}$AI2${HEAVY_RIGHT}$AI3${HEAVY_RIGHT}"
+
 BASKETBALL="\360\237\217\200"
 TRAVEL="\342\233\265\357\270\217"
 BURGER="\360\237\215\224"
@@ -39,7 +42,7 @@ FLAG="\360\237\207\250\360\237\207\263"
 FANCY="$BURGER $BEER $BASKETBALL $TRAVEL"
 
 #export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$AI1>$AI2>$AI3>$II "
-export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W$PI\$\n${FANCY}$II "
+export PS1="$TI[\@ \d]${FANCY} $UI\u$PI@$HI\h$PI:$DI\W\n$PI\$${PROMPT}$II "
 
 # Non-color prompt
 

@@ -42,7 +42,7 @@ FLAG="\360\237\207\250\360\237\207\263"
 FANCY="$BURGER $BEER $BASKETBALL $TRAVEL"
 
 #export PS1="$TI[\@ \d]$UI\u$PI@$HI\h$PI:$DI\W\n$PI\$$AI1>$AI2>$AI3>$II "
-export PS1="$TI[\@ \d]${FANCY} $UI\u$PI@$HI\h$PI:$DI\W\n$PI\$${PROMPT}$II"
+export PS1="$TI[\@ \d]${FANCY} $UI\u$PI@$HI\h$PI:$DI\W\n$PI\$${PROMPT}$II "
 
 # Non-color prompt
 

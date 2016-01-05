@@ -21,3 +21,8 @@ export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.52
 export PATH=/usr/local/bin:${ANT_HOME}/bin:$PATH
 export PATH=${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
 
+# go lang
+export GOPATH=~/Developer/go
+export PATH=${GOPATH}/bin:$PATH
+
+

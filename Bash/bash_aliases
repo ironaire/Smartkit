@@ -72,5 +72,3 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
-alias erase='rm -rf ~/Library/Containers/com.tencent.qq/Data/Library/Application\ Support/QQ/Defaults/accounts.xml'
-

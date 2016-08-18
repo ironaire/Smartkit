@@ -38,3 +38,7 @@ set-jdk() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
 }
 
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/swang/.sdkman"
+[[ -s "/Users/swang/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/swang/.sdkman/bin/sdkman-init.sh"

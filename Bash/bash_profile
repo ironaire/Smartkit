@@ -26,4 +26,3 @@ export PATH=${MVN_HOME}/bin:${GRAILS_HOME}/bin:$PATH
 export GOPATH=~/Developer/go
 export PATH=${GOPATH}/bin:$PATH
 
-

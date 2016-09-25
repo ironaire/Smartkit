@@ -32,6 +32,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export EDITOR=vim
+set -o vi
 
 # set jdk version
 set-jdk() {

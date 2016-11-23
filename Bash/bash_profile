@@ -12,7 +12,9 @@ JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
 JAVA8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home
 export JAVA_HOME=${JAVA8_HOME}
 
-export CATALINA_HOME=${WORKSHOP}/apache-tomcat-7.0.57
+TOMCAT7_HOME=${WORKSHOP}/apache-tomcat-7.0.57
+TOMCAT8_HOME=${WORKSHOP}/apache-tomcat-8.5.6
+export CATALINA_HOME=${TOMCAT7_HOME}
 
 export PATH=/usr/local/bin:${ANT_HOME}/bin:${MVN_HOME}/bin:$PATH 
 

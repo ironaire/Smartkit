@@ -32,10 +32,5 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export EDITOR=vim
-set -o vi
-
-# set jdk version
-set-jdk() {
-    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
-}
+#set -o vi # set -o emacs for emacs key binding
 

@@ -33,7 +33,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
-Bundle 'majutsushi/tagbar'
+"Bundle 'majutsushi/tagbar' " not used right now"
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -145,21 +145,21 @@ let g:ctrlp_by_filename = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
-" Tagbar settings
+" Tagbar settings, not used right now
 " nnoremap <silent> <Leader>o :TagbarToggle<CR> " use \o standing for file outline to toggle
-nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=32
+"nnoremap <c-o> :TagbarToggle<CR> " use ctrl-o to toggle
+"let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+"let g:tagbar_width=32
 
-"" Tagbar groovy support
-let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
-    \ 'kinds' : [
-    \ 'p:package',
-    \ 'c:class',
-    \ 'i:interface',
-    \ 'f:function',
-    \ 'v:variables'
-    \ ]
-\ }
+"" Tagbar groovy support, not used right now
+"let g:tagbar_type_groovy = {
+"    \ 'ctagstype' : 'groovy',
+"    \ 'kinds' : [
+"    \ 'p:package',
+"    \ 'c:class',
+"    \ 'i:interface',
+"    \ 'f:function',
+"    \ 'v:variables'
+"    \ ]
+"\ }
 

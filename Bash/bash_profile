@@ -3,21 +3,10 @@ then
     . ~/.bashrc
 fi
 
-WORKSHOP=~/Workshop
-
-JAVA6_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
-JAVA7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_60.jdk/Contents/Home
-JAVA8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home
-export JAVA_HOME=${JAVA8_HOME}
-
-TOMCAT7_HOME=${WORKSHOP}/apache-tomcat-7.0.57
-TOMCAT8_HOME=${WORKSHOP}/apache-tomcat-8.5.6
-export CATALINA_HOME=${TOMCAT7_HOME}
-
 export PATH=/usr/local/bin:${ANT_HOME}/bin:$PATH 
 
 # enable vi mode
-set -o vi # set -o emacs is to enable emacs default mode
+# set -o vi # set -o emacs is to enable emacs default mode
 
 # go lang
 export GOPATH=~/Developer/go

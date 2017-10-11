@@ -34,6 +34,8 @@ Bundle 'ervandew/supertab'
 Bundle 'kien/ctrlp.vim'
 Bundle 'tomtom/tcomment_vim'
 "Bundle 'majutsushi/tagbar' " not used right now"
+" simple todo plugin
+Bundle 'vitalk/vim-simple-todo'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9

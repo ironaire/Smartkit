@@ -29,6 +29,7 @@ Bundle 'xolox/vim-notes'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
+Bundle 'vitalk/vim-simple-todo'
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9

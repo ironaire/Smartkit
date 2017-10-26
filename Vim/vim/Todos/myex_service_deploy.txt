@@ -1,0 +1,12 @@
+[x] build service
+[x] scp service war to vm
+[x] stop tomcat: sudo systemctl stop tomcat
+[x] backup old war and replace new one
+[x] connect to stash db, mysql -h bmi-stashrdmz-vp01.bmi.osumc.edu -u experienceUser -p
+[x] source database sql: use MY_EXPERIENCE; source MY_EXPERIENCE_2017-10-24.sql
+[x] start tomcat: sudo systemctl start tomcat
+[x] build app
+[x] scp app war to vm
+[x] stop tomcat: sudo systemctl stop tomcat
+[x] backup old war and replace new one
+[x] start tomcat: sudo systemctl start tomcat

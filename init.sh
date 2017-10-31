@@ -2,13 +2,14 @@
 # init.sh
 # This file will init my bash env setting for my smart kit
 # including .bashrc, .bash_aliases, .bash_profile
-# and vim config, .gitconfig, ctags regex patterns
+# and vim config, .gitconfig, tmux regex patterns
 # run this file using sh init.sh or ./init.sh if runnable
 
 workDir="$PWD"
 echo $workDir
 misc="$workDir/Misc"
 gitconfig="${misc}/gitconfig"
+tmux="${misc}/tmux.conf"
 vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -17,6 +18,7 @@ bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 dotgitconfig="$HOME/.gitconfig"
+dottmux="$HOME/.tmux.conf"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
@@ -32,6 +34,17 @@ echo "Create symbolic for ${dotgitconfig}"
 ln -f -s ${gitconfig} ${dotgitconfig} || { echo "Creating symbolic ${dotgitconfig} failed"; exit 1; }
 echo "${dotgitconfig} created"
 echo `ls -l ${dotgitconfig}`
+
+# test if .tmux.conf exists
+if [ -e "${dotctmux}" ]
+then
+    echo "${dottmux} exists, remove it"
+    rm -rf ${dottmux} || { echo "Removing ${dottmux} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dottmux}"
+ln -f -s ${tmux} ${dottmux} || { echo "Creating symbolic ${dottmux} failed"; exit 1; }
+echo "${dottmux} created"
+echo `ls -l ${dottmux}`
 
 # test if .vim exists
 if [ -e "${dotvim}" ]

@@ -9,6 +9,7 @@ workDir="$PWD"
 echo $workDir
 misc="$workDir/Misc"
 gitconfig="${misc}/gitconfig"
+tmux="${misc}/tmux.conf"
 vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -16,13 +17,28 @@ bash="${workDir}/Bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
+selfrc="${workDir}/selfrc"
 dotgitconfig="$HOME/.gitconfig"
+dottmux="$HOME/.tmux.conf"
 dottmux="$HOME/.tmux.conf"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
+dotselfrc="$HOME/.selfrc"
+
+# test if .selfrc exists
+if [ -e "${dotselfrc}" ]
+then
+    echo "${dotselfrc} exists, remove it"
+    rm -rf ${dotselfrc} || { echo "Removing ${dotselfrc} failed"; exit 1; }
+fi
+echo "Create symbolic for ${dotselfrc}"
+ln -f -s ${selfrc} ${dotselfrc} || { echo "Creating symbolic ${dotselfrc} failed"; exit 1; }
+echo "${dotselfrc} created"
+echo `ls -l ${dotselfrc}`
+
 # test if .gitconfig exists
 if [ -e "${dotgitconfig}" ]
 then

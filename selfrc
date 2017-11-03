@@ -8,6 +8,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 # aliases
 ## ssh to vm
 alias ssh-ramp='ssh wan119@rampapp.bmi.osumc.edu'
+alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'
 
 ## other useful tools
 TODO_SH='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh'

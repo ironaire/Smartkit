@@ -1,6 +1,8 @@
 # theme options
 ## powerlevel9k
+### show prompt on newline
 #POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+### custom left prompt
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 # aliases

@@ -5,6 +5,9 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 # aliases
 
+## other useful tools
+TODO_SH='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh'
+alias todo="$TODO_SH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/swang/.sdkman"

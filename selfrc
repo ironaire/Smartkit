@@ -8,8 +8,9 @@ alias gc='/Users/swang/.sdkman/candidates/groovy/current/bin/groovyc'
 alias gy='/Users/swang/.sdkman/candidates/groovy/current/bin/groovy'
 
 ## other useful tools
-TODO_SH='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh'
-alias todo="$TODO_SH"
+### todo.txt
+alias t='/usr/local/Cellar/todo-txt/2.10/bin/todo.sh -d ~/Smartkit/todo.cfg -c -t'
+export TODOTXT_DEFAULT_ACTION=ls
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/swang/.sdkman"

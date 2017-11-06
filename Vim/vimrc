@@ -14,21 +14,17 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" Specify a directory for plugins, default is plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin()
 
-" let vundle manage vundle
-" required
-Bundle 'gmarik/vundle'
+" Make sure you use single quotes
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
 
-" My bundles here
-" 
-" original repos on github
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-notes'
+" Initialize plugin system
+call plug#end()
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -95,11 +91,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 " set file encoding order
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-
-" notes setting
-let g:notes_directories = ['~/Google Drive/notes']
-let g:notes_suffix = '.txt'
-let g:notes_title_sync = 'rename_file'
 
 " color theme setting
 set background=dark " light for light version

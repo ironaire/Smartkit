@@ -9,6 +9,8 @@ filetype off	"required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
+" Turn on syntax
+syntax on
 
 " Disable beep and flash whth an autocmd
 set noerrorbells visualbell t_vb=
@@ -20,21 +22,15 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin()
 
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Raimondi/delimitMate'
-Plugin 'Yggdroot/indentLine'
-Plugin 'ervandew/supertab'
-Plugin 'kien/ctrlp.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+Plug 'kien/ctrlp.vim'
+Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -89,9 +85,6 @@ set showmatch
 
 " Allow tilde to act as an operator
 set notildeop
-
-" Turn on syntax
-syntax on
 
 " Vertical line indentation
 let g:indentLine_color_term = 239

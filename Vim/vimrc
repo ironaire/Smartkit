@@ -7,6 +7,8 @@
 set nocompatible
 filetype off	"required
 filetype plugin indent on	"required
+" Turn on syntax
+syntax on
 
 " Disable beep and flash whth an autocmd
 set noerrorbells visualbell t_vb=
@@ -22,6 +24,7 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
+Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()
@@ -80,9 +83,6 @@ set showmatch
 " Allow tilde to act as an operator
 set notildeop
 
-" Turn on syntax
-syntax on
-
 " set encoding, fileencoding, fileencodings
 set encoding=utf-8
 " set langmenu=zh_CN.UTF-8
@@ -123,4 +123,7 @@ let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_by_filename = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
+" vimwiki/vimwiki
+let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 

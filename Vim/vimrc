@@ -6,6 +6,9 @@
 " User vim settings, rather than VI settings
 set nocompatible
 filetype off	"required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 
 " Disable beep and flash whth an autocmd
 set noerrorbells visualbell t_vb=
@@ -13,21 +16,10 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" Specify a directory for plugins, default is plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" 
-" original repos on github
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-notes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Raimondi/delimitMate'
@@ -35,12 +27,9 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'ervandew/supertab'
 Plugin 'kien/ctrlp.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
+" Initialize plugin system
+call plug#end()
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate

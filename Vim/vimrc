@@ -25,6 +25,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'Raimondi/delimitMate'
 
 " Initialize plugin system
 call plug#end()

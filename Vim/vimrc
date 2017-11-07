@@ -26,6 +26,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-surround'
+Plug 'mhinz/vim-startify'
+Plug 'jdkanani/vim-material-theme'
 
 " Initialize plugin system
 call plug#end()
@@ -84,6 +87,9 @@ set showmatch
 " Allow tilde to act as an operator
 set notildeop
 
+" show line number at startup
+set number
+
 " set encoding, fileencoding, fileencodings
 set encoding=utf-8
 " set langmenu=zh_CN.UTF-8
@@ -96,17 +102,17 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " color theme setting
 set background=dark " light for light version
 if has('gui_running')
-    colorscheme solarized
+    colorscheme material-theme "solarized
     set background=dark " dark or light
     " set theme to be light between 6am and 5pm by enabling next 4 lines
     let hour = strftime("%H")
     if hour > 6 && hour < 18
-        set background=light
+        "set background=light
     endif
     set guifont=Monaco:h13
     set columns=120 lines=40
     set fuoptions=maxvert,maxhorz
-    set transparency=20
+    set transparency=10
 endif
 
 " NERDTree setting
@@ -127,4 +133,8 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " vimwiki/vimwiki
 let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+
+" startify setting
+"nnoremap <silent> <Leader>st : Startify<CR> " use \st to show startify list
+nnoremap <c-s> : Startify<CR> " use ctrl-s to show startify list
 

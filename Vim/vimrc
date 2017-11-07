@@ -88,6 +88,9 @@ set showmatch
 " Allow tilde to act as an operator
 set notildeop
 
+" show line number at startup
+set number
+
 " Vertical line indentation
 let g:indentLine_color_term = 239
 "let g:indentLine_color_gui = '#09AA08'
@@ -121,8 +124,8 @@ if has('gui_running')
 endif
 
 " NERDTree setting
-" nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e standing for project explorer to toggle
-nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle
+nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e standing for project explorer to toggle
+" nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle " use ctrl-e to goggle nerdtree
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2

@@ -28,6 +28,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
+Plug 'mhinz/vim-startify'
 
 " Initialize plugin system
 call plug#end()
@@ -101,11 +102,6 @@ set encoding=utf-8
 set fileencoding=utf-8
 " set file encoding order
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-
-" notes setting
-let g:notes_directories = ['~/Google Drive/notes']
-let g:notes_suffix = '.txt'
-let g:notes_title_sync = 'rename_file'
 
 " color theme setting
 set background=dark " light for light version

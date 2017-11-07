@@ -25,6 +25,7 @@ call plug#begin()
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'Raimondi/delimitMate'
+Plug 'tpope/vim-surround'
 Plug 'Yggdroot/indentLine'
 Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
@@ -124,8 +125,8 @@ if has('gui_running')
 endif
 
 " NERDTree setting
-nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e standing for project explorer to toggle
-" nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle " use ctrl-e to goggle nerdtree
+"nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e for project explorer to toggle
+nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle " use ctrl-e to toggle nerdtree
 " Uncomment this if you want to lose NERDTree if it is the last window open
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeChDirMode = 2
@@ -142,3 +143,6 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " vimwiki/vimwiki
 let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
+" startify setting
+"nnoremap <silent> <Leader>st : Startify<CR> " use \st to show startify list
+nnoremap <c-s> : Startify<CR> " use ctrl-s to show startify list

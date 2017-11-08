@@ -106,7 +106,8 @@ if has('gui_running')
     set transparency=10
 
     " color theme setting
-    colorscheme material-theme "solarized to use solarized
+    "colorscheme material-theme
+    colorscheme solarized
     set background=dark " dark or light
     " set theme to be light between 6am and 6 by enabling next 4 lines
     let hour = strftime("%H")

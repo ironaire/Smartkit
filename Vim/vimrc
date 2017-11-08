@@ -99,21 +99,21 @@ set fileencoding=utf-8
 " set file encoding order
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+" color theme setting
+colorscheme material-theme
+"colorscheme solarized
+set background=dark " dark or light
+" set theme to be light between 6am and 6 by enabling next 4 lines
+let hour = strftime("%H")
+if hour > 6 && hour < 18
+    "set background=light
+endif
+
 if has('gui_running')
     set guifont=Monaco:h13
     set columns=120 lines=40
     set fuoptions=maxvert,maxhorz
     set transparency=10
-
-    " color theme setting
-    "colorscheme material-theme
-    colorscheme solarized
-    set background=dark " dark or light
-    " set theme to be light between 6am and 6 by enabling next 4 lines
-    let hour = strftime("%H")
-    if hour > 6 && hour < 18
-        set background=light
-    endif
 endif
 
 " NERDTree setting

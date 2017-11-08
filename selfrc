@@ -12,6 +12,8 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 alias ssh-ramp='ssh wan119@rampapp.bmi.osumc.edu'
 alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'
 alias ssh-nlighten-d='ssh wan119@bmi-nlighten-vd01.bmi.osumc.edu'
+alias ssh-myex-service-d='ssh wan119@bmi-myexsrv-vd01.bmi.osumc.edu'
+alias ssh-myex-app-d='ssh wan119@bmi-myexapp-vd01.bmi.osumc.edu'
 
 ## other useful tools
 ### todo.txt

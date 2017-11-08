@@ -8,6 +8,10 @@
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
 # aliases
+if type nvim > /dev/null 2>&1; then
+    alias vim='nvim'
+fi
+
 ## ssh to vm
 alias ssh-ramp='ssh wan119@rampapp.bmi.osumc.edu'
 alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'

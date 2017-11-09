@@ -118,13 +118,6 @@ if hour > 6 && hour < 18
     "set background=light
 endif
 
-if has('gui_running')
-    set guifont=Monaco:h13
-    set columns=120 lines=40
-    set fuoptions=maxvert,maxhorz
-    set transparency=10
-endif
-
 " NERDTree setting
 "nnoremap <silent> <Leader>e :NERDTreeToggle<CR> " use \e for project explorer to toggle
 nnoremap <c-e> :NERDTreeToggle<CR> " use ctrl-e to toggle " use ctrl-e to toggle nerdtree

@@ -1,7 +1,7 @@
 #+TITLE: README
 #+AUTHOR: Shunchao Wang
 #+ Refer to init.sh
-* Bash
+* bashes
 This contains all bash related configuration files, make the aliases
 in the $HOME folder for these files.
 - bashrc
@@ -17,22 +17,13 @@ in the $HOME folder for these files.
     variables, something might need to be changed
   + there should be a soft link $HOME/.bash_profile pointing
     to this file
-- bash_project
-  + bash project settings file, like ssh aliases for the vms, this
-    file is sourced by .bash_profile
-  + you might want to create a soft link $HOME/.bash_project pointing
-    to this file
-* Emacs
-Contains everyting emacs needs, init file, addons, org related,
-etc. There should be a soft link $HOME/.emacs.d pointing to the folder
-- ln -s <path>/workbench-repo/Emacs $HOME/.emacs.d
-* Vim
+* vims
 Contains vim configuration file and settings.
 - vimrc: vim init file, there should be a soft link $HOME/.vimrc
   pointing to this file
 - vim: vim settings including addons and plugins, there should be a
   soft link $HOME/.vim pointing to this folder
-* Misc
+* miscs
 Contains other workbench settings.
 - gitconfig: git config file, there should be a soft link
   $HOME/.gitconfig pointing to this file

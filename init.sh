@@ -7,13 +7,13 @@
 
 workDir="$PWD"
 echo $workDir
-misc="$workDir/misc"
+misc="$workDir/miscs"
 gitconfig="${misc}/gitconfig"
 tmux="${misc}/tmux.conf"
-vim="$workDir/vim"
+vim="$workDir/vims"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
-bash="${workDir}/bash"
+bash="${workDir}/bashes"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"

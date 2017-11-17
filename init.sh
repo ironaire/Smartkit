@@ -7,13 +7,13 @@
 
 workDir="$PWD"
 echo $workDir
-misc="$workDir/Misc"
+misc="$workDir/misc"
 gitconfig="${misc}/gitconfig"
 tmux="${misc}/tmux.conf"
-vim="$workDir/Vim"
+vim="$workDir/vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
-bash="${workDir}/Bash"
+bash="${workDir}/bash"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
@@ -114,9 +114,4 @@ echo "Create symbolic for ${dotbash_profile}"
 ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
-
-echo "Cloning vim plugin manager vundle"
-git clone https://github.com/gmarik/vundle.git ${dotvim}/bundle/vundle
-echo "Vim vundle cloned"
-echo `ls -l ${dotvim}/bundle`
 

@@ -13,6 +13,7 @@ if type nvim > /dev/null 2>&1; then
 fi
 
 ## ssh to vm
+alias ssh-repo='ssh wan119@code.bmi.osumc.edu'
 alias ssh-ramp='ssh wan119@rampapp.bmi.osumc.edu'
 alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'
 alias ssh-nlighten-d='ssh wan119@bmi-nlighten-vd01.bmi.osumc.edu'

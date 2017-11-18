@@ -26,6 +26,8 @@ dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
 dotselfrc="$HOME/.selfrc"
+dotxdgconfig="$HOME/.config"
+nvim="${dotxdgconfig}/nvim"
 
 # test if .selfrc exists
 if [ -e "${dotselfrc}" ]
@@ -114,4 +116,24 @@ echo "Create symbolic for ${dotbash_profile}"
 ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
+
+# xdg config 
+if [ -d ${dotxdgconfig} ]
+then
+    echo "${dotxdgconfig} exists, use it"
+else 
+    echo "${dotxdgconfig} doesn't exist, create it"
+    mkdir -p ${dotxdgconfig}
+fi
+
+# neovim
+if [ -e ${nvim} ]
+then
+    echo "${nvim} exists, remove it"
+    rm -rf ${nvim} || { echo "Removing ${nvim} failed"; exit 1; }
+fi
+echo "Create symbolic for ${nvim}"
+ln -f -s ${vim_d} ${nvim} || { echo "Creating symbolic ${nvim} failed"; exit 1; }
+echo "${nvim} created"
+echo `ls -l ${nvim}`
 

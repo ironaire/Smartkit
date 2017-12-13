@@ -3,7 +3,7 @@
 # theme options
 ## powerlevel9k
 ### show prompt on newline
-#POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 ### custom left prompt
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 
@@ -19,8 +19,16 @@ alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'
 alias ssh-nlighten-d='ssh wan119@bmi-nlighten-vd01.bmi.osumc.edu'
 alias ssh-myex-service-d='ssh wan119@bmi-myexsrv-vd01.bmi.osumc.edu'
 alias ssh-myex-app-d='ssh wan119@bmi-myexapp-vd01.bmi.osumc.edu'
+# annotation press vm on rdmz with ipa authentication
+## ip: 140.254.126.73
+## cname: annotation-press.bmi.osumc.edu
+## hostname: bmi-annotationpress-vp01.bmi.osumc.edu
+alias ssh-anno-p='ssh wan119@bmi-annotationpress-vp01.bmi.osumc.edu'
 
 ## other useful tools
+# path
+export ES_HOME=~/apps/elasticsearch-1.7.5
+export PATH=$ES_HOME/bin:$PATH
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/swang/.sdkman"

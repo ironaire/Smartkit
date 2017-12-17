@@ -31,6 +31,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'mhinz/vim-startify'
 Plug 'jdkanani/vim-material-theme'
+Plug 'trevordmiller/nova-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -109,7 +110,8 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " color theme setting
-colorscheme material-theme
+colorscheme nova
+"colorscheme material-theme
 "colorscheme solarized
 set background=dark " dark or light
 " set theme to be light between 6am and 6pm by enabling next 4 lines

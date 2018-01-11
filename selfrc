@@ -12,6 +12,10 @@ if type nvim > /dev/null 2>&1; then
     alias vim='nvim'
 fi
 
+# disable zsh shared history
+unsetopt inc_append_history
+unsetopt share_history
+
 ## ssh to vm
 alias ssh-repo='ssh wan119@code.bmi.osumc.edu'
 alias ssh-ramp='ssh wan119@rampapp.bmi.osumc.edu'

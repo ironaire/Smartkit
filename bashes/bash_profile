@@ -3,7 +3,7 @@ then
     . ~/.bashrc
 fi
 
-export PATH=/usr/local/bin:${ANT_HOME}/bin:$PATH 
+export PATH=/usr/local/bin:$PATH 
 
 # enable vi mode
 # set -o vi # set -o emacs is to enable emacs default mode

@@ -31,8 +31,8 @@ alias ssh-anno-p='ssh wan119@bmi-annotationpress-vp01.bmi.osumc.edu'
 
 # MyExperience App Test Server on rdmz
 # #ip: 140.254.126.211
-# #hostname: bmi-myexpapp-vt01.bmi.osumc.edu
-alias ssh-myex-app-t='ssh wan119@140.254.126.211'
+# #hostname: bmi-myexapp-vt01.bmi.osumc.edu
+alias ssh-myex-app-t='ssh wan119@bmi-myexapp-vt01.bmi.osumc.edu'
 
 ## other useful tools
 # path

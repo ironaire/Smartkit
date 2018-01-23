@@ -29,6 +29,11 @@ alias ssh-myex-app-d='ssh wan119@bmi-myexapp-vd01.bmi.osumc.edu'
 ## hostname: bmi-annotationpress-vp01.bmi.osumc.edu
 alias ssh-anno-p='ssh wan119@bmi-annotationpress-vp01.bmi.osumc.edu'
 
+# MyExperience App Test Server on rdmz
+# #ip: 140.254.126.211
+# #hostname: bmi-myexpapp-vt01.bmi.osumc.edu
+alias ssh-myex-app-t='ssh wan119@140.254.126.211'
+
 ## other useful tools
 # path
 export ES_HOME=~/apps/elasticsearch-1.7.5

@@ -17,7 +17,7 @@ bash="${workDir}/bashes"
 bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
-selfrc="${workDir}/selfrc"
+myrc="${workDir}/myrc"
 dotgitconfig="$HOME/.gitconfig"
 dottmux="$HOME/.tmux.conf"
 dotvim="$HOME/.vim"
@@ -25,20 +25,20 @@ dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
-dotselfrc="$HOME/.selfrc"
+dotmyrc="$HOME/.myrc"
 dotxdgconfig="$HOME/.config"
 nvim="${dotxdgconfig}/nvim"
 
-# test if .selfrc exists
-if [ -e "${dotselfrc}" ]
+# test if .myrc exists
+if [ -e "${dotmyrc}" ]
 then
-    echo "${dotselfrc} exists, remove it"
-    rm -rf ${dotselfrc} || { echo "Removing ${dotselfrc} failed"; exit 1; }
+    echo "${dotmyrc} exists, remove it"
+    rm -rf ${dotmyrc} || { echo "Removing ${dotmyrc} failed"; exit 1; }
 fi
-echo "Create symbolic for ${dotselfrc}"
-ln -f -s ${selfrc} ${dotselfrc} || { echo "Creating symbolic ${dotselfrc} failed"; exit 1; }
-echo "${dotselfrc} created"
-echo `ls -l ${dotselfrc}`
+echo "Create symbolic for ${dotmyrc}"
+ln -f -s ${myrc} ${dotmyrc} || { echo "Creating symbolic ${dotmyrc} failed"; exit 1; }
+echo "${dotmyrc} created"
+echo `ls -l ${dotmyrc}`
 
 # test if .gitconfig exists
 if [ -e "${dotgitconfig}" ]

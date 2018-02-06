@@ -34,6 +34,10 @@ alias ssh-anno-p='ssh wan119@bmi-annotationpress-vp01.bmi.osumc.edu'
 # #hostname: bmi-myexapp-vt01.bmi.osumc.edu
 alias ssh-myex-app-t='ssh wan119@bmi-myexapp-vt01.bmi.osumc.edu'
 
+# wisca on internal
+# #hostname: bmi-wisca-vp02.bmi.osumc.edu
+alias ssh-wisca-vp02='ssh wan119@bmi-wisca-vp02.bmi.osumc.edu'
+
 ## other useful tools
 # path
 export ES_HOME=~/apps/elasticsearch-1.7.5

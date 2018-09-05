@@ -21,8 +21,13 @@ alias ssh-repo='ssh wan119@code.bmi.osumc.edu'
 alias ssh-ramp='ssh wan119@bmi-rampapp-vd01.bmi.osumc.edu'
 alias ssh-dataportal-d='ssh wan119@bmi-dataportal-vd01.bmi.osumc.edu'
 alias ssh-nlighten-d='ssh wan119@bmi-nlighten-vd01.bmi.osumc.edu'
+### MyExperience
 alias ssh-myex-service-d='ssh wan119@bmi-myexsrv-vd01.bmi.osumc.edu'
 alias ssh-myex-app-d='ssh wan119@bmi-myexapp-vd01.bmi.osumc.edu'
+alias ssh-myex-service-t='ssh wan119@bmi-myexsrv-vt01.bmi.osumc.edu'
+alias ssh-myex-app-t='ssh wan119@bmi-myexapp-vt01.bmi.osumc.edu'
+alias ssh-myex-service-p='ssh wan119@bmi-myexsrv-vp01.bmi.osumc.edu'
+alias ssh-myex-app-p='ssh wan119@bmi-myexapp-vp01.bmi.osumc.edu'
 # annotation press vm on rdmz with ipa authentication
 ## ip: 140.254.126.73
 ## cname: annotation-press.bmi.osumc.edu
@@ -37,6 +42,39 @@ alias ssh-myex-app-t='ssh wan119@bmi-myexapp-vt01.bmi.osumc.edu'
 # wisca on internal
 # #hostname: bmi-wisca-vp02.bmi.osumc.edu
 alias ssh-wisca-vp02='ssh wan119@bmi-wisca-vp02.bmi.osumc.edu'
+
+# elasticsearch on internal
+# hostname: bmi-elastic-vd01.bmi.osumc.edu
+alias ssh-elastic-vd01='ssh wan119@bmi-elastic-vd01.bmi.osumc.edu'
+
+# elasticsearch on internal
+# hostname: bmi-elastic-vd02.bmi.osumc.edu
+alias ssh-elastic-vd02='ssh wan119@bmi-elastic-vd02.bmi.osumc.edu'
+
+# gitlab runner 01 on internal
+# hostname: bmi-lnxbuild-vt01.bmi.osumc.edu
+# ip: 10.80.7.52
+alias ssh-gitlab-runner-vt01='wan119@bmi-lnxbuild-vt01.bmi.osumc.edu'
+
+# gitlab runner 02 on internal
+# hostname: bmi-lnxbuild-vt02.bmi.osumc.edu
+# ip: 10.80.7.53
+alias ssh-gitlab-runner-vt02='wan119@bmi-lnxbuild-vt02.bmi.osumc.edu'
+
+# gitlab runner 03 on internal
+# hostname: bmi-lnxbuild-vt03.bmi.osumc.edu
+# ip: 10.80.7.54
+alias ssh-gitlab-runner-vt03='wan119@bmi-lnxbuild-vt03.bmi.osumc.edu'
+
+# gitlab runner 04 on internal
+# hostname: bmi-lnxbuild-vt04.bmi.osumc.edu
+# ip: 10.80.7.55
+alias ssh-gitlab-runner-vt04='wan119@bmi-lnxbuild-vt04.bmi.osumc.edu'
+
+# air hilliard for Ayaz on rdmz
+# hostname bmi-air-hilliard-vp01.bmi.osumc.edu
+# ip: 140.254.126.37
+alias ssh-air-hilliard-vp01='ssh wan119@bmi-air-hilliard-vp01.bmi.osumc.edu'
 
 ## other useful tools
 # path

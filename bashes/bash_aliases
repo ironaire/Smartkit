@@ -72,3 +72,12 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 # Shortcut for using the Kdiff3 tool for svn diff.
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
+# shell to use git log with graph and pretty format with commit hash and subject
+git() {
+    if [[ $@ == "log" ]]; then
+        command git log --pretty=format:"%h %s" --graph
+    else
+        command git "$@"
+    fi
+}
+

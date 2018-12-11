@@ -33,6 +33,11 @@ fi
 
 export EDITOR=vim
 
+# Add bash aliases.
+if [ -f ~/.myrc ]; then
+    source ~/.myrc
+fi
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/Users/swang/.sdkman"
 #[[ -s "/Users/swang/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/swang/.sdkman/bin/sdkman-init.sh"

@@ -30,6 +30,10 @@ PROMPT_COMMAND="set_tab_title ; $PROMPT_COMMAND"
 if [ -f ~/.bash_aliases ]; then
     source ~/.bash_aliases
 fi
+# Add myrc aliases.
+if [ -f ~/.myrc ]; then
+    source ~/.myrc
+fi
 
 export EDITOR=vim
 #set -o vi # set -o emacs for emacs key binding

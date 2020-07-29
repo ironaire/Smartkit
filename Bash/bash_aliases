@@ -22,8 +22,8 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-eval `dircolors ~/.dir_colors`
-export LS_OPTIONS=' --color'
+eval `dircolors ~/.dir_colors --sh`
+export LS_OPTIONS=' --color=auto'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -a -lF $LS_OPTIONS'
 alias la='ls -aF $LS_OPTIONS'
@@ -40,5 +40,4 @@ alias grep='grep --color=auto --exclude-dir={\.svn,\.git} --exclude=*.{class,jar
 alias svnkdiff='svn diff --diff-cmd kdiff3'
 
 alias vi=vim
-alias ms='~/Smartkit/Bash/multi_screen'
 

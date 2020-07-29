@@ -3,6 +3,3 @@ then
     . ~/.bashrc
 fi
 
-export JAVA_HOME=~/Library/Java/jdk1.7.0_60
-export PATH=${JAVA_HOME}/bin:$PATH
-

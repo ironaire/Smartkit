@@ -27,7 +27,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'ervandew/supertab'
-Plug 'sirVer/ultisnips'
 " Ultisnips useful snippets
 Plug 'honza/vim-snippets'
 Plug 'kien/ctrlp.vim'
@@ -140,10 +139,4 @@ let g:ctrlp_working_path_mode = 'rw'
 let g:ctrlp_by_filename = 1
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-" Ultisnips setting
-let g:UltiSnipsExpandTrigger="ii"
-let g:UltiSnipsListSnippets="iI"
-let g:UltiSnipsJumpForwardTrigger="II"
-let g:UltiSnipsJumpBackwardTrigger="OO"
 

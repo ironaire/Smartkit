@@ -8,8 +8,6 @@
 workDir="$PWD"
 echo $workDir
 misc="$workDir/Misc"
-gitconfig="${misc}/gitconfig"
-ctags="${misc}/ctags"
 vim="$workDir/Vim"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -18,10 +16,7 @@ bashrc="${bash}/bashrc"
 bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 minttyrc="${bash}/minttyrc-solarized-dark"
-screenrc="${bash}/screenrc"
 dir_colors="${bash}/dircolors.256dark"
-dotgitconfig="$HOME/.gitconfig"
-dotctags="$HOME/.ctags"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
@@ -29,18 +24,7 @@ dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
 dotminttyrc="$HOME/.minttyrc"
 dotdir_colors="$HOME/.dir_colors"
-dotscreenrc="${HOME}/.screenrc"
 
-# test if .screenrc exists
-if [ -e "${dotscreenrc}" ]
-then
-    echo "${dotscreenrc} exists, remove it"
-    rm -rf ${dotscreenrc} || { echo "Removing ${dotscreenrc} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotscreenrc}"
-ln -f -s ${screenrc} ${dotscreenrc} || { echo "Creating symbolic ${dotscreenrc} failed"; exit 1; }
-echo "${dotscreenrc} created"
-echo `ls -l ${dotscreenrc}`
 
 # test if .dir_colors exists
 if [ -e "${dotdir_colors}" ]
@@ -63,28 +47,6 @@ echo "Create symbolic for ${dotminttyrc}"
 ln -f -s ${minttyrc} ${dotminttyrc} || { echo "Creating symbolic ${dotminttyrc} failed"; exit 1; }
 echo "${dotminttyrc} created"
 echo `ls -l ${dotminttyrc}`
-
-# test if .gitconfig exists
-if [ -e "${dotgitconfig}" ]
-then
-    echo "${dotgitconfig} exists, remove it"
-    rm -rf ${dotgitconfig} || { echo "Removing ${dotgitconfig} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotgitconfig}"
-ln -f -s ${gitconfig} ${dotgitconfig} || { echo "Creating symbolic ${dotgitconfig} failed"; exit 1; }
-echo "${dotgitconfig} created"
-echo `ls -l ${dotgitconfig}`
-
-# test if .ctags exists
-if [ -e "${dotctags}" ]
-then
-    echo "${dotctags} exists, remove it"
-    rm -rf ${dotctags} || { echo "Removing ${dotctags} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dotctags}"
-ln -f -s ${ctags} ${dotctags} || { echo "Creating symbolic ${dotctags} failed"; exit 1; }
-echo "${dotctags} created"
-echo `ls -l ${dotctags}`
 
 # test if .vim exists
 if [ -e "${dotvim}" ]
@@ -140,9 +102,4 @@ echo "Create symbolic for ${dotbash_profile}"
 ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
-
-echo "Cloning vim plugin manager vundle"
-git clone https://github.com/gmarik/vundle.git ${dotvim}/bundle/vundle
-echo "Vim vundle cloned"
-echo `ls -l ${dotvim}/bundle`
 

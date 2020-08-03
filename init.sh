@@ -103,3 +103,8 @@ ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotba
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
 
+echo "Cloning vim plugin manager vim-plug"
+curl -fLo ~/${dotvim}/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo "Vim-plug downloaded."
+echo `ls -l ${dotvim}/autoload`

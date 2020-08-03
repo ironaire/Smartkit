@@ -14,30 +14,27 @@ if has('autocmd')
     autocmd GUIEnter * set visualbell t_vb=
 endif
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" vim-plug 
+call plug#begin('~/.vim/plugged')
 
-" let vundle manage vundle
-" required
-Bundle 'gmarik/vundle'
-
-" My bundles here
-" 
+" Plugins go here
+"
 " original repos on github
-Bundle 'xolox/vim-misc'
-Bundle 'xolox/vim-notes'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'Raimondi/delimitMate'
-Bundle 'Yggdroot/indentLine'
-Bundle 'ervandew/supertab'
-Bundle 'sirVer/ultisnips'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'scrooloose/nerdtree'
+Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+Plug 'ervandew/supertab'
+Plug 'sirVer/ultisnips'
 " Ultisnips useful snippets
-Bundle 'honza/vim-snippets'
-Bundle 'kien/ctrlp.vim'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'xolox/vim-easytags'
+Plug 'honza/vim-snippets'
+Plug 'kien/ctrlp.vim'
+Plug 'tomtom/tcomment_vim'
+
+call plug#end()
+
 
 " Turn on the verboseness to see everything vim is doing
 " set verbose=9
@@ -149,28 +146,4 @@ let g:UltiSnipsExpandTrigger="ii"
 let g:UltiSnipsListSnippets="iI"
 let g:UltiSnipsJumpForwardTrigger="II"
 let g:UltiSnipsJumpBackwardTrigger="OO"
-
-" Tagbar settings
-nnoremap <silent> <Leader>t :TagbarToggle<CR> " use default \t to toggle
-" nnoremap <c-t> :TagbarToggle<CR> " use ctrl-t to toggle
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
-let g:tagbar_width=31
-
-"" Tagbar groovy support
-let g:tagbar_type_groovy = {
-    \ 'ctagstype' : 'groovy',
-    \ 'kinds' : [
-    \ 'p:package',
-    \ 'c:class',
-    \ 'i:interface',
-    \ 'f:function',
-    \ 'v:variables'
-    \ ]
-\ }
-
-" vim-easytags settings
-" Easytags (enables CTL-] and CTRL-T) by autotagging
-let g:easytags_cmd = '/usr/local/bin/ctags'
-set tags=./.git/tags;~/.vimtags
-let g:easytags_dynamic_files = 1
 

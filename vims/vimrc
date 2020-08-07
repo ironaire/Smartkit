@@ -135,7 +135,11 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class,*.jar,*.war,*.o,.DS_Store
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " vimwiki/vimwiki
-let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [
+			\{'path': '~/wiki/publicwiki/', 'syntax': 'markdown', 'ext': '.md'},
+			\{'path': '~/wiki/personalwiki/', 'syntax': 'markdown', 'ext': '.md'},
+		\]
+"let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " startify setting
 "nnoremap <silent> <Leader>st : Startify<CR> " use \st to show startify list

@@ -56,7 +56,9 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 
-export LS_OPTIONS=' -G'
+## Mac is not honoring --color=auto, needs to use -G
+#export LS_OPTIONS='-G'
+export LS_OPTIONS='--color=auto'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 alias ll='ls -a -lF $LS_OPTIONS'
 alias la='ls -aF $LS_OPTIONS'

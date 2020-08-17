@@ -1,8 +1,6 @@
 # theme options
 
 # aliases
-alias gc='/Users/swang/.sdkman/candidates/groovy/current/bin/groovyc'
-alias gy='/Users/swang/.sdkman/candidates/groovy/current/bin/groovy'
 
 ## other useful tools
 if type nvim > /dev/null 2>&1; then

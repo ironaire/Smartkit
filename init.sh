@@ -9,7 +9,6 @@ workDir="$PWD"
 echo $workDir
 misc="$workDir/miscs"
 gitconfig="${misc}/gitconfig"
-tmux="${misc}/tmux.conf"
 vim="$workDir/vims"
 vim_d="${vim}/vim"
 vimrc="${vim}/vimrc"
@@ -19,15 +18,12 @@ bash_aliases="${bash}/bash_aliases"
 bash_profile="${bash}/bash_profile"
 myrc="${workDir}/myrc"
 dotgitconfig="$HOME/.gitconfig"
-dottmux="$HOME/.tmux.conf"
 dotvim="$HOME/.vim"
 dotvimrc="$HOME/.vimrc"
 dotbashrc="$HOME/.bashrc"
 dotbash_aliases="$HOME/.bash_aliases"
 dotbash_profile="$HOME/.bash_profile"
 dotmyrc="$HOME/.myrc"
-dotxdgconfig="$HOME/.config"
-nvim="${dotxdgconfig}/nvim"
 
 # test if .myrc exists
 if [ -e "${dotmyrc}" ]
@@ -50,17 +46,6 @@ echo "Create symbolic for ${dotgitconfig}"
 ln -f -s ${gitconfig} ${dotgitconfig} || { echo "Creating symbolic ${dotgitconfig} failed"; exit 1; }
 echo "${dotgitconfig} created"
 echo `ls -l ${dotgitconfig}`
-
-# test if .tmux.conf exists
-if [ -e "${dotctmux}" ]
-then
-    echo "${dottmux} exists, remove it"
-    rm -rf ${dottmux} || { echo "Removing ${dottmux} failed"; exit 1; }
-fi
-echo "Create symbolic for ${dottmux}"
-ln -f -s ${tmux} ${dottmux} || { echo "Creating symbolic ${dottmux} failed"; exit 1; }
-echo "${dottmux} created"
-echo `ls -l ${dottmux}`
 
 # test if .vim exists
 if [ -e "${dotvim}" ]
@@ -116,24 +101,4 @@ echo "Create symbolic for ${dotbash_profile}"
 ln -f -s ${bash_profile} ${dotbash_profile} || { echo "Creating symbolic ${dotbash_profile} failed"; exit 1; }
 echo "${dotbash_profile} created"
 echo `ls -l ${dotbash_profile}`
-
-# xdg config 
-if [ -d ${dotxdgconfig} ]
-then
-    echo "${dotxdgconfig} exists, use it"
-else 
-    echo "${dotxdgconfig} doesn't exist, create it"
-    mkdir -p ${dotxdgconfig}
-fi
-
-# neovim
-if [ -e ${nvim} ]
-then
-    echo "${nvim} exists, remove it"
-    rm -rf ${nvim} || { echo "Removing ${nvim} failed"; exit 1; }
-fi
-echo "Create symbolic for ${nvim}"
-ln -f -s ${vim_d} ${nvim} || { echo "Creating symbolic ${nvim} failed"; exit 1; }
-echo "${nvim} created"
-echo `ls -l ${nvim}`
 

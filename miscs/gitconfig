@@ -1,6 +1,6 @@
 [user]
 	name = Shunchao Wang
-	email = wang.2799@osu.edu
+	email = shunchao.wang@gmail.com
 [core]
     packedGitLimit = 512M
     packedGitWindowSize = 512M
@@ -22,3 +22,5 @@
 	sslVerify = true
 [color]
 	ui = auto
+[pull]
+	rebase = false

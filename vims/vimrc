@@ -21,6 +21,7 @@ endif
 call plug#begin()
 
 " Make sure you use single quotes
+Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 Plug 'vimwiki/vimwiki'
@@ -28,7 +29,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
 Plug 'jdkanani/vim-material-theme'
-Plug 'altercation/vim-colors-solarized'
 Plug 'trevordmiller/nova-vim'
 
 " Initialize plugin system
@@ -98,24 +98,13 @@ set encoding=utf-8
 " set new file encoding
 set fileencoding=utf-8
 " set file encoding order
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
-
-" color theme setting
-colorscheme nova
-" colorscheme material-theme
-"colorscheme solarized
+colorscheme nova "solarized
+"colorscheme material-theme "solarized
 set background=dark " dark or light
-" set theme to be light between 6am and 6 by enabling next 4 lines
+" set theme to be light between 6am and 5pm by enabling next 4 lines
 let hour = strftime("%H")
 if hour > 6 && hour < 18
     "set background=light
-endif
-
-if has('gui_running')
-    set guifont=Monaco:h13
-    set columns=120 lines=40
-    set fuoptions=maxvert,maxhorz
-    set transparency=10
 endif
 
 " NERDTree setting
@@ -139,7 +128,6 @@ let g:vimwiki_list = [
 			\{'path': '~/wiki/publicwiki/', 'syntax': 'markdown', 'ext': '.md'},
 			\{'path': '~/wiki/personalwiki/', 'syntax': 'markdown', 'ext': '.md'},
 		\]
-"let g:vimwiki_list = [{'path': '~/Google Drive/wiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 " startify setting
 "nnoremap <silent> <Leader>st : Startify<CR> " use \st to show startify list
